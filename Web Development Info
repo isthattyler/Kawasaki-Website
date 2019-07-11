@@ -1,0 +1,26 @@
+<a href = ""> _______ </a> - links
+<p> - paragraphs (newline with space)
+<br> - break(newline)
+
+<img src = "url/image name in folder"		             # can add style = "width:___; height:___;"
+<center> = center images/anything under the tag
+
+
+classes use ".class" in css
+but for id, use "#id"
+
+<div> tags are block elements
+
+Position Property css:
+  static(default value) - comes after the previous block -> normal order (one after the other)
+  relative - new position relative to (what would've been) its normal position -> also needs to set coordinates
+  absolute - position relative to its parent (if no parent elements, the original <html> document will be its parent)
+  fixed - similar to absolute, but only relative to <html> doc and not any other parent (not affected by scrolling)
+  sticky - behaves like relative originally, but afterwards if something happens (scrolling), it becomes fixed
+
+text-decoration: (overline, underline, line-through, underline overline)
+line-height: (normal, 1.6, 10%) -> vertical spacing
+
+spacing can use px or em (which is number of spaces relative to font size)
+
+bottom starts from bottom up for positioning

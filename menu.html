@@ -1,0 +1,4060 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title> Kawasaki Restaurant </title>
+		<link rel ="stylesheet" type ="text/css" href ="menu.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+
+	<body>
+
+		<div id = "title"> Kawasaki Japanese Restaurant </div>
+
+
+		<div id = "pages">
+			<a href="index.html" class="nav"> Home</a>
+			<a href="menu.html" class="nav"> Menu</a>
+			<a href="gallery.html" class="nav"> Gallery </a>
+		</div>
+
+
+<!-- ____________________ LUNCH ________________________ -->
+
+		<div class="lunch-container">
+
+			<div id="lunch">
+				Lunch Specials (Monday - Saturday		from	11:30am to 3:00pm)
+			</div>
+
+
+<!-- ____________________ KITCHEN LUNCH BENTO ________________________ -->
+
+			<button onclick="dropdown(1)" class="dropButton">
+				<span class="food-category"> Kitchen Lunch Bento </span>
+				<p class="description"> Served with Miso Soup, Salad, White Rice, California Roll, and Shumai </p>
+			</button>
+
+			<div id="myDropdown1" class="dropdownContent">
+
+
+				<span class="items" onclick="openModal(1)"> Chicken Teriyaki
+					<span class="price"> 9.00 </span>
+				</span>
+				<div id="modal1" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Chicken Teriyaki
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(2)"> Salmon Teriyaki
+					<span class="price"> 9.00 </span>
+				</span>
+				<div id="modal2" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Salmon Teriyaki
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class ="items" onclick="openModal(3)"> Beef Teriyaki
+					<span class="price"> 10.00 </span>
+				</span>
+				<div id="modal3" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Beef Teriyaki
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(4)"> Pork Katsu
+					<span class="price"> 9.00 </span>
+				</span>
+				<div id="modal4" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Pork Katsu
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(5)"> Chicken Katsu
+					<span class="price"> 9.00 </span>
+				</span>
+				<div id="modal5" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Chicken Katsu
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(6)"> Chicken Negimaki
+					<span class="price"> 9.00 </span>
+				</span>
+				<div id="modal6" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Chicken Negimaki
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(7)"> Beef Negimaki
+					<span class="price"> 10.00 </span>
+				</span>
+				<div id="modal7" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Beef Negimaki
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(8)"> Shrimp Tempura
+					<span class="price"> 10.00 </span>
+				</span>
+				<div id="modal8" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Shrimp Tempura
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+
+			</div>
+
+
+<!-- ____________________ HIBACHI LUNCH SPECIAL ________________________ -->
+
+			<button onclick="dropdown(2)" class="dropButton">
+				 <span class="food-category"> Hibachi Lunch Special </span>
+				 <p class="description"> Served with Fried Rice, Vegetable, and a Clear Soup or Salad </p>
+			 </button>
+
+			<div id="myDropdown2" class="dropdownContent">
+
+
+				<span class="items" onclick="openModal(9)"> Hibachi Vegetable
+					<span class="price"> 7.00 </span>
+				</span>
+				<div id="modal9" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal(9)"> &times; </span>
+						<p class="ordering">
+							Hibachi Vegetable
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(10)"> Hibachi Chicken
+					<span class="price"> 9.00 </span>
+				</span>
+				<div id="modal10" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal(10)"> &times; </span>
+						<p class="ordering">
+							Hibachi Chicken
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(11)"> Hibachi Shrimp
+					<span class="price"> 10.00 </span>
+				</span>
+				<div id="modal11" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Hibachi Shrimp
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(12)"> Hibachi Steak
+					<span class="price"> 10.00 </span>
+				</span>
+				<div id="modal12" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Hibachi Steak
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(13)"> Hibachi Salmon
+					<span class="price"> 10.00 </span>
+				</span>
+				<div id="modal13" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Hibachi Salmon
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(14)"> Hibachi Scallop
+					<span class="price"> 10.00 </span>
+				</span>
+				<div id="modal14" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Hibachi Scallop
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+
+			</div>
+
+
+<!-- ____________________ SUSHI LUNCH SPECIAL ________________________ -->
+
+			<button onclick="dropdown(3)" class="dropButton">
+				 <span class="food-category"> Sushi Lunch Special </span>
+				 <p class="description"> Served with Miso Soup and Salad </p>
+			 </button>
+
+			<div id="myDropdown3" class="dropdownContent">
+
+
+				<span class="items" onclick="openModal(15)"> Sushi Lunch
+					<span class="price"> 7.00 </span>
+					<p class="description"> 5 pcs assorted sushi & a California Roll </p>
+				</span>
+				<div id="modal15" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Sushi Lunch
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(16)"> Chirashi Lunch
+					<span class="price"> 9.00 </span>
+					<p class="description"> Variety of raw fish over sushi rice </p>
+				</span>
+				<div id="modal16" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Chirashi Lunch
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(17)"> Sushi Sashimi Combo
+					<span class="price"> 10.00 </span>
+					<p class="description"> 4 pcs sushi, 7pcs sashimi & California Roll </p>
+				</span>
+				<div id="modal17" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Sushi Sashimi Combo
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(18)"> Sashimi Lunch
+					<span class="price"> 10.00 </span>
+					<p class="description"> 10 pcs assorted sashimi </p>
+				</span>
+				<div id="modal18" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Sushi Lunch
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(19)"> Unagi Don
+					<span class="price"> 10.00 </span>
+					<p class="description"> Baked eel over sushi rice </p>
+				</span>
+				<div id="modal19" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Unagi Don
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+
+			</div>
+
+<!-- ____________________ MAKI LUNCH SPECIAL ________________________ -->
+
+			<button onclick="dropdown(5)" class="dropButton">
+				 <span class="food-category"> Maki Lunch Special </span>
+				 <p class="description"> All Inside-Out Rolls Served with Miso Soup and Salad </p>
+			 </button>
+
+			<div id="myDropdown5" class="dropdownContent">
+
+
+				<span class="items" onclick="openModal(20)"> Choose Any 2 Rolls
+					<span class="price"> 7.95 </span>
+				</span>
+				<div id="modal20" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Choose Any 2 Rolls
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(21)"> Choose Any 3 Rolls
+					<span class="price"> 10.95 </span>
+				</span>
+				<div id="modal21" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Choose Any 3 Rolls
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+			</div>
+
+
+		</div>
+
+
+
+
+
+<!-- __________________________ DINNER _____________________________________ -->
+
+		<div class="dinner-container">
+
+			<div id="dinner">
+				Dinner
+			</div>
+
+<!-- ____________________ SOUPS AND SALADS ________________________ -->
+
+			<button onclick="dropdown(6)" class="dropButton">
+				<span class="food-category"> Soup and Salads </span>
+			</button>
+
+			<div id="myDropdown6" class="dropdownContent">
+				<span class="items" onclick="openModal(22)"> Miso Soup
+					<span class="price"> 2.00 </span>
+				</span>
+				<div id="modal22" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Miso Soup
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(23)"> Clear Soup
+					<span class="price"> 2.00 </span>
+				</span>
+				<div id="modal23" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Clear Soup
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(24)"> Seafood Soup
+					<span class="price"> 6.00 </span>
+				</span>
+				<div id="modal24" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Seafood Soup
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(25)"> Mixed Green Salad
+					<span class="price"> 3.00 </span>
+				</span>
+				<div id="modal25" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Mixed Green Salad
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(26)"> Avocado Salad
+					<span class="price"> 5.00 </span>
+				</span>
+				<div id="modal26" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Avocado Salad
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(27)"> Seaweed Salad
+					<span class="price"> 5.00 </span>
+				</span>
+				<div id="modal27" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Seaweed Salad
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(28)"> Salmon Skin Salad
+					<span class="price"> 5.00 </span>
+					<p class="description"> Salmon skin, cucumber, seaweed salad with eel sauce </p>
+				</span>
+					<div id="modal28" class="myModal">
+						<div class="modal-content">
+							<span class="close" onclick="closeModal()"> &times; </span>
+							<p class="ordering">
+								Salmon Skin Salad
+								<span id="sp-instructions"> Special Instructions </span>
+								<textarea> </textarea>
+								<form> <input type="text" value="1"> <button> Submit </button> </form>
+							</p>
+						</div>
+					</div>
+
+				<span class="items" onclick="openModal(29)"> Kani Salad
+					<span class="price"> 6.00 </span>
+					<p class="description"> Crab stick, cucumber, seaweed salad, tobiko and crunch with eel sauce </p>
+				</span>
+					<div id="modal29" class="myModal">
+						<div class="modal-content">
+							<span class="close" onclick="closeModal()"> &times; </span>
+							<p class="ordering">
+								Kani Salad
+								<span id="sp-instructions"> Special Instructions </span>
+								<textarea> </textarea>
+								<form> <input type="text" value="1"> <button> Submit </button> </form>
+							</p>
+						</div>
+					</div>
+
+				<span class="items" onclick="openModal(30)"> Snow Crab Salad
+					<span class="price"> 7.00 </span>
+					<p class="description"> Snow crab meat, cucumber, tobiko, and crunch with eel sauce </p>
+				</span>
+					<div id="modal30" class="myModal">
+						<div class="modal-content">
+							<span class="close" onclick="closeModal()"> &times; </span>
+							<p class="ordering">
+								Snow Crab Salad
+								<span id="sp-instructions"> Special Instructions </span>
+								<textarea> </textarea>
+								<form> <input type="text" value="1"> <button> Submit </button> </form>
+							</p>
+						</div>
+					</div>
+
+				<span class="items" onclick="openModal(31)"> Pepper Tuna Salad
+					<span class="price"> 9.00 </span>
+					<p class="description"> Mango, cucumber, with ponzu & Japanese dressing </p>
+				</span>
+					<div id="modal31" class="myModal">
+						<div class="modal-content">
+							<span class="close" onclick="closeModal()"> &times; </span>
+							<p class="ordering">
+								Pepper Tuna Salad
+								<span id="sp-instructions"> Special Instructions </span>
+								<textarea> </textarea>
+								<form> <input type="text" value="1"> <button> Submit </button> </form>
+							</p>
+						</div>
+					</div>
+
+				<span class="items" onclick="openModal(32)"> Special Sashimi Salad
+					<span class="price"> 11.95 </span>
+					<p class="description"> Fresh cube of tuna, salmon, octopus, white tuna, kani on the top of mixed salad with Japanese dressing </p>
+				</span>
+					<div id="modal32" class="myModal">
+						<div class="modal-content">
+							<span class="close" onclick="closeModal()"> &times; </span>
+							<p class="ordering">
+								Special Sashimi Salad
+								<span id="sp-instructions"> Special Instructions </span>
+								<textarea> </textarea>
+								<form> <input type="text" value="1"> <button> Submit </button> </form>
+							</p>
+						</div>
+					</div>
+
+
+			</div>
+
+
+<!-- ____________________ KITCHEN APPETIZERS ________________________ -->
+
+			<button onclick="dropdown(7)" class="dropButton">
+				 <span class="food-category"> Kitchen Appetizers </span>
+			 </button>
+
+			<div id="myDropdown7" class="dropdownContent">
+
+
+				<span class="items" onclick="openModal(33)"> Edamame
+					<span class="price"> 4.00 </span>
+				</span>
+				<div id="modal33" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Edamame
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(34)"> Haru Maki
+					<span class="price"> 4.00 </span>
+					<p class="description"> Japanese spring rolls </p>
+				</span>
+				<div id="modal34" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Haru Maki
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(34)"> Age Tofu
+					<span class="price"> 4.50 </span>
+				</span>
+				<div id="modal34" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Age Tofu
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(35)"> Yasai Gyoza
+					<span class="price"> 4.50 </span>
+					<p class="description"> Vegetable dumpling </p>
+				</span>
+					<div id="modal35" class="myModal">
+						<div class="modal-content">
+							<span class="close" onclick="closeModal()"> &times; </span>
+							<p class="ordering">
+								Yasai Gyoza
+								<span id="sp-instructions"> Special Instructions </span>
+								<textarea> </textarea>
+								<form> <input type="text" value="1"> <button> Submit </button> </form>
+							</p>
+						</div>
+					</div>
+
+				<span class="items" onclick="openModal(36)"> Shrimp Shumai
+					<span class="price"> 4.50 </span>
+				</span>
+				<div id="modal36" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Shrimp Shumai
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(37)"> Gyoza
+					<span class="price"> 5.00 </span>
+				</span>
+				<div id="modal37" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Gyoza
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(38)"> Wasabi Shumai
+					<span class="price"> 5.00 </span>
+					<p class="description"> Fried pork dumpling </p>
+				</span>
+				<div id="modal38" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Wasabi Shumai
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(39)"> Ika Fried
+					<span class="price"> 5.00 </span>
+					<p class="description"> Fried squid Japanese style </p>
+				</span>
+				<div id="modal39" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Ika Fried
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(40)"> Tatsuta Age
+					<span class="price"> 5.00 </span>
+					<p class="description"> Crispy marinated fried chicken </p>
+				</span>
+				<div id="modal40" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Tatsuta Age
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(41)"> Vegetable Tempura
+					<span class="price"> 6.00 </span>
+				</span>
+				<div id="modal41" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Vegetable Tempura
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(42)"> Zaru Soba
+					<span class="price"> 6.00 </span>
+					<p class="description"> Buckwheat noodle served cold with special sauce </p>
+				</span>
+				<div id="modal42" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Zaru Soba
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(43)"> Nasu
+					<span class="price"> 6.00 </span>
+					<p class="description"> Eggplant with miso sauce </p>
+				</span>
+				<div id="modal43" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Nasu
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(44)"> Chicken Negimaki
+					<span class="price"> 6.00 </span>
+					<p class="description"> Chicken wrapped with scallion, asparagus, carrot and cheese, fried with katsu sauce  </p>
+				</span>
+				<div id="modal44" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Chicken Negimaki
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(45)"> Beef Negimaki
+					<span class="price"> 6.00 </span>
+				</span>
+				<div id="modal45" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Beef Negimaki
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(46)"> Shrimp & Vegetable Tempura
+					<span class="price"> 6.00 </span>
+				</span>
+				<div id="modal46" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Shrimp & Vegetable Tempura
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(47)"> Butterfly Shrimp
+					<span class="price"> 8.00 </span>
+					<p class="description"> Fried shrimp with special sauce </p>
+				</span>
+				<div id="modal47" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Butterfly Shrimp
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(48)"> Salmon Asparagus
+					<span class="price"> 9.00 </span>
+					<p class="description"> Asparagus rolled in fresh salmon and baked with teriyaki sauce </p>
+				</span>
+				<div id="modal48" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Salmon Asparagus
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+					</div>
+
+				<span class="items" onclick="openModal(49)"> Crispy Duck Spring Roll
+					<span class="price"> 6.50 </span>
+				</span>
+				<div id="modal49" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Crispy Duck Spring Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(50)"> Hamachi-Kama
+					<span class="price"> 10.00 </span>
+					<p class="description"> Broiled yellowtail neck with spicy ponzu sauce </p>
+				</span>
+				<div id="modal50" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Hamachi-Kama
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(51)"> Yaki Tori
+					<span class="price"> 5.00 </span>
+					<p class="description"> Broiled chicken and pepper </p>
+				</span>
+				<div id="modal51" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Yaki Tori
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(52)"> Ika Maru Yaki
+					<span class="price"> 8.00 </span>
+					<p class="description"> Broiled squid </p>
+				</span>
+				<div id="modal52" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Ika Maru Yaki
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+
+			</div>
+
+
+<!-- ____________________ SUSHI BAR APPETIZERS ________________________ -->
+
+			<button onclick="dropdown(8)" class="dropButton">
+				 <span class="food-category"> Sushi Bar Appetizers </span>
+			 </button>
+
+			<div id="myDropdown8" class="dropdownContent">
+
+
+				<span class="items" onclick="openModal(53)"> Oshinko
+					<span class="price"> 5.00 </span>
+					<p class="description"> Assorted Japanese pickles </p>
+				</span>
+				<div id="modal53" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Oshinko
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(54)"> White Fish Tempura
+					<span class="price"> 7.00 </span>
+					<p class="description"> Mixed salad with spicy mayo and eel sauce </p>
+				</span>
+				<div id="modal54" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							White Fish Tempura
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(55)"> Sunomono
+					<span class="price"> 7.00 </span>
+					<p class="description"> Fluke, crab stick, shrimp, mackerel, tako, red clam with ponzu sauce </p>
+				</span>
+				<div id="modal55" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Sunomono
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(56)"> Shrimp Summer
+					<span class="price"> 8.00 </span>
+					<p class="description"> Shrimp, crab stick, mango, cucumber wrapped with rice paper and sweet sour sauce </p>
+				</span>
+				<div id="modal56" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Shrimp Summer
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(57)"> Tiger Eye
+					<span class="price"> 8.00 </span>
+					<p class="description"> Smoked salmon & cream cheese wrapped with baked squid and seaweed salad outside </p>
+				</span>
+				<div id="modal57" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Tiger Eye
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(58)"> King Salmon
+					<span class="price"> 8.00 </span>
+					<p class="description"> Seared salmon, wrap with snow crab, avocado, fried onion with Kawasaki sauce </p>
+				</span>
+				<div id="modal58" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							King Salmon
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(59)"> Sushi Appetizer
+					<span class="price"> 8.00 </span>
+				</span>
+				<div id="modal59" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Sushi Appetizer
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(60)"> Sashimi Appetizer
+					<span class="price"> 9.00 </span>
+				</span>
+				<div id="modal60" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Sashimi Appetizer
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(61)"> Yellowtail or Sashimi Jalapeno
+					<span class="price"> 9.00 </span>
+				</span>
+				<div id="modal61" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Yellowtail or Sashimi Jalapeno
+							<div class="choice">
+								<button> Yellow Jalapeno </button>
+								<button> Sashimi Jalapeno </button>
+							</div>
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(62)"> Spicy Tuna or Salmon Tartar
+					<span class="price"> 9.00 </span>
+					<p class="description"> with seaweed salad and onion </p>
+				</span>
+					<div id="modal62" class="myModal">
+						<div class="modal-content">
+							<span class="close" onclick="closeModal()"> &times; </span>
+							<p class="ordering">
+								Spicy Tuna or Salmon Tartar
+								<div class="choice">
+									<button> Spicy Tuna Tartar </button>
+									<button> Salmon Tartar </button>
+								</div>
+								<span id="sp-instructions"> Special Instructions </span>
+								<textarea> </textarea>
+								<form> <input type="text" value="1"> <button> Submit </button> </form>
+							</p>
+						</div>
+					</div>
+
+				<span class="items" onclick="openModal(63)"> Tuna Tataki
+					<span class="price"> 9.00 </span>
+					<p class="description"> Seared & served with ponzu sauce </p>
+				</span>
+				<div id="modal63" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Tuna Tataki
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(64)"> Usuzukuri
+					<span class="price"> 9.00 </span>
+					<p class="description"> Thinly sliced fluke with chilly reddish ponzu sauce </p>
+				</span>
+				<div id="modal64" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Usuzukuri
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+			</div>
+
+
+<!-- ____________________ A LA CARTE SUSHI/SASHIMI ________________________ -->
+
+			<button onclick="dropdown(9)" class="dropButton">
+				 <span class="food-category"> A La Carte Sushi/Sashimi </span>
+			 </button>
+
+			<div id="myDropdown9" class="dropdownContent">
+
+
+				<span class="items" onclick="openModal(65)"> Tuna
+					<span class="price"> 3.00 </span>
+				</span>
+				<div id="modal65" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Tuna
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(66)"> Fatty Tuna
+					<span class="price"> 8.00 </span>
+				</span>
+				<div id="modal66" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Fatty Tuna
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(67)"> White Tuna
+					<span class="price"> 2.50 </span>
+				</span>
+				<div id="modal67" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							White Tuna
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(68)"> Salmon
+					<span class="price"> 2.50 </span>
+				</span>
+				<div id="modal68" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Salmon
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(69)"> Smoked Salmon
+					<span class="price"> 2.50 </span>
+				</span>
+				<div id="modal69" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Smoked Salmon
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(70)"> Yellowtail
+					<span class="price"> 3.00 </span>
+				</span>
+				<div id="modal70" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Yellowtail
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(71)"> Fluke
+					<span class="price"> 2.50 </span>
+				</span>
+				<div id="modal71" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Fluke
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(72)"> Striped Bass
+					<span class="price"> 2.50 </span>
+				</span>
+				<div id="modal72" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							YellowtailJalapeno
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(73)"> Mackerel
+					<span class="price"> 2.00 </span>
+				</span>
+				<div id="modal73" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Mackerel
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(74)"> Sea Urchin
+					<span class="price"> 4.50 </span>
+				</span>
+				<div id="modal74" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Sea Urchin
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(75)"> Alaskan King Crab
+					<span class="price"> 4.50 </span>
+				</span>
+				<div id="modal75" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Alaskan King Crab
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(76)"> Red Clam
+					<span class="price"> 2.00 </span>
+				</span>
+				<div id="modal76" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Red Clam
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(77)"> Squid
+					<span class="price"> 2.50 </span>
+				</span>
+				<div id="modal77" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Squid
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(78)"> Scallop
+					<span class="price"> 3.00 </span>
+				</span>
+				<div id="modal78" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Scallop
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(79)"> Shrimp
+					<span class="price"> 2.00 </span>
+				</span>
+				<div id="modal79" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Shrimp
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(80)"> Eel
+					<span class="price"> 2.50 </span>
+				</span>
+				<div id="modal80" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Eel
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(81)"> Crab Stick (Kani)
+					<span class="price"> 2.00 </span>
+				</span>
+				<div id="modal81" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Crab Stick
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(82)"> Octopus
+					<span class="price"> 2.50 </span>
+				</span>
+				<div id="modal82" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Octopus
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(83)"> Salmon Roe
+					<span class="price"> 2.50 </span>
+				</span>
+				<div id="modal83" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Salmon Roe
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(84)"> Flying Fish Roe
+					<span class="price"> 2.00 </span>
+				</span>
+				<div id="modal84" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						Flying Fish Roe
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(85)"> Tobiko (Red, Black, or Green)
+					<span class="price"> 2.50 </span>
+				</span>
+				<div id="modal85" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Spicy Tuna or Salmon Tartar
+							<div class="choice">
+								<button> Red </button>
+								<button> Black </button>
+								<button> Green </button>
+							</div>
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(86)"> Egg
+					<span class="price"> 1.50 </span>
+				</span>
+				<div id="modal86" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Egg
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(87)"> Bean Curd
+					<span class="price"> 1.50 </span>
+				</span>
+				<div id="modal87" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Bean Curd
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+			</div>
+
+
+<!-- ____________________ ROLL OR HAND ROLL ________________________ -->
+
+			<button onclick="dropdown(10)" class="dropButton">
+				 <span class="food-category"> Roll or Hand Roll </span>
+			 </button>
+
+			<div id="myDropdown10" class="dropdownContent">
+
+
+				<!-- RAW -->
+				<span class="items" onclick="openModal(88)"> Salmon Roll
+					<span class="price"> 4.50 </span>
+				</span>
+				<div id="modal88" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Salmon Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(89)"> Tuna Roll
+					<span class="price"> 5.00 </span>
+				</span>
+				<div id="modal89" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Tuna Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(90)"> Tuna (Avocado or Cucumber) Roll
+					<span class="price"> 5.00 </span>
+				</span>
+				<div id="modal90" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Tuna Roll
+							<div class="choice">
+								<button> Tuna Avocado Roll </button>
+								<button> Tuna Cucumber Roll </button>
+							</div>
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(91)"> Yellowtail Scallion Roll
+					<span class="price"> 5.00 </span>
+				</span>
+				<div id="modal91" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Yellowtail Scallion Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(92)"> Salmon (Avocado or Cucumber) Roll
+					<span class="price"> 5.00 </span>
+				</span>
+				<div id="modal92" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Salmon Roll
+							<div class="choice">
+								<button> Salmon Avocado Roll </button>
+								<button> Salmon Cucumber Roll </button>
+							</div>
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(93)"> Alaska Roll
+					<span class="price"> 5.00 </span>
+					<p class="description"> Salmon, cucumber, avocado and masago </p>
+				</span>
+				<div id="modal93" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Alaska Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(94)"> Saba Roll
+					<span class="price"> 5.00 </span>
+					<p class="description"> Marinated mackerel, cucumber, ginger and scallion </p>
+				</span>
+				<div id="modal94" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Saba Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(95)"> Toro Scallion Roll
+					<span class="price"> 10.00 </span>
+				</span>
+				<div id="modal95" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Toro Scallion Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+
+				<!-- COOKED -->
+				<span class="items" onclick="openModal(96)"> Salmon Skin Roll
+					<span class="price"> 4.50 </span>
+				</span>
+				<div id="modal96" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Salmon Skin Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(97)"> Eel (Avocado or Cucumber) Roll
+					<span class="price"> 5.00 </span>
+				</span>
+				<div id="modal97" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Eel Roll
+							<div class="choice">
+								<button> Eel Avocado Roll </button>
+								<button> Eel Cucumber Roll </button>
+							</div>
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(98)"> Boston Roll
+					<span class="price"> 5.00 </span>
+					<p class="description"> Shrimp, cucumber, lettuce and mayo </p>
+				</span>
+				<div id="modal98" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Boston Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(99)"> Philadelphia Roll
+					<span class="price"> 5.50 </span>
+					<p class="description"> Smoked salmon, cream cheese, scallion & cucumber </p>
+				</span>
+				<div id="modal99" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Philadelphia Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(100)"> California Roll
+					<span class="price"> 4.50 </span>
+				</span>
+				<div id="modal100" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p> MODAL</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(101)"> Shrimp & Asparagus Roll
+					<span class="price"> 5.00 </span>
+				</span>
+				<div id="modal101" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Shrimp & Asparagus Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(102)"> Futo Maki
+					<span class="price"> 5.50 </span>
+					<p class="description"> Crab meat, vegetable, egg and tobiko </p>
+				</span>
+					<div id="modal102" class="myModal">
+						<div class="modal-content">
+							<span class="close" onclick="closeModal()"> &times; </span>
+							<p class="ordering">
+								Futo Maki
+								<span id="sp-instructions"> Special Instructions </span>
+								<textarea> </textarea>
+								<form> <input type="text" value="1"> <button> Submit </button> </form>
+							</p>
+						</div>
+					</div>
+
+				<span class="items" onclick="openModal(103)"> Oyster Tempura Roll
+					<span class="price"> 6.00 </span>
+					<p class="description"> Fried oyster, cucumber, tobiko and lettuce with eel sauce </p>
+				</span>
+				<div id="modal103" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Oyster Tempura Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(104)"> Shrimp Tempura Roll
+					<span class="price"> 7.00 </span>
+					<p class="description"> Fried shrimp, cucumber, avocado, masago, and lettuce with eel sauce </p>
+				</span>
+				<div id="modal104" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Shrimp Tempura Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(105)"> Snow Crab Roll
+					<span class="price"> 7.00 </span>
+					<p class="description"> Snow crab, avocado, crunch and red tobiko </p>
+				</span>
+					<div id="modal105" class="myModal">
+						<div class="modal-content">
+							<span class="close" onclick="closeModal()"> &times; </span>
+							<p class="ordering">
+								Snow Crab Roll
+								<span id="sp-instructions"> Special Instructions </span>
+								<textarea> </textarea>
+								<form> <input type="text" value="1"> <button> Submit </button> </form>
+							</p>
+						</div>
+					</div>
+
+				<span class="items" onclick="openModal(106)"> Spider Maki
+					<span class="price"> 7.50 </span>
+					<p class="description"> Fried soft shell crab, avocado, cucumber, masago, and lettuce with eel sauce</p>
+				</span>
+				<div id="modal106" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Spider Maki
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(107)"> Wasabi Lobster Roll
+					<span class="price"> 8.00 </span>
+					<p class="description"> with avocado and green tobiko </p>
+				</span>
+					<div id="modal107" class="myModal">
+						<div class="modal-content">
+							<span class="close" onclick="closeModal()"> &times; </span>
+							<p class="ordering">
+								Wasabi Lobster Roll
+								<span id="sp-instructions"> Special Instructions </span>
+								<textarea> </textarea>
+								<form> <input type="text" value="1"> <button> Submit </button> </form>
+							</p>
+						</div>
+					</div>
+
+				<span class="items" onclick="openModal(108)"> King Crab Roll
+					<span class="price"> 8.00 </span>
+					<p class="description"> with avocado, cucumber, and masago </p>
+				</span>
+				<div id="modal108" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							King Crab Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(109)"> Lobster Tempura Roll
+					<span class="price"> 8.50 </span>
+					<p class="description"> with avocado, cucumber, lettuce, masago, and eel sauce </p>
+				</span>
+				<div id="modal109" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Lobster Tempura Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(110)"> Dragon Roll
+					<span class="price"> 9.00 </span>
+					<p class="description"> Eel and cucumber inside, topped with avocado, masago with eel sauce </p>
+				</span>
+				<div id="modal110" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Dragon Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+
+				<!-- SPICY -->
+				<span class="items" onclick="openModal(111)"> Spicy Roll
+					<span class="price"> 5.50 </span>
+					<p class="description"> Choice of tuna, salmon, yellowtail or white tuna </p>
+				</span>
+				<div id="modal111" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Spicy Roll
+							<div class="choice">
+								<button> Spicy Tuna Roll </button>
+								<button> Spicy Salmon Roll </button>
+								<button> Spicy Yellowtail Roll </button>
+								<button> Spicy White Tuna Roll </button>
+							</div>
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(112)"> Yellowtail Jalapeno Roll
+					<span class="price"> 5.50 </span>
+				</span>
+				<div id="modal112" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Yellowtail Jalapeno Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(113)"> Spicy Crunch Roll
+					<span class="price"> 5.75 </span>
+					<p class="description"> Choice of tuna, salmon, yellowtail or white tuna </p>
+				</span>
+				<div id="modal113" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Spicy Crunch Roll
+							<div class="choice">
+								<button> Spicy Tuna Roll </button>
+								<button> Spicy Salmon Roll </button>
+								<button> Spicy Yellowtail Roll </button>
+								<button> Spicy White Tuna Roll </button>
+							</div>
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(114)"> Spicy Scallop Roll
+					<span class="price"> 6.00 </span>
+					<p class="description"> with cucumber and crunch </p> </span>
+					<div id="modal114" class="myModal">
+						<div class="modal-content">
+							<span class="close" onclick="closeModal()"> &times; </span>
+							<p class="ordering">
+								Spicy Scallop Roll
+								<span id="sp-instructions"> Special Instructions </span>
+								<textarea> </textarea>
+								<form> <input type="text" value="1"> <button> Submit </button> </form>
+							</p>
+						</div>
+					</div>
+
+				<span class="items" onclick="openModal(115)"> Spicy Mango Shrimp Roll
+					<span class="price"> 6.00 </span>
+				</span>
+				<div id="modal115" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Spicy Mango Shrimp Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(116)"> Black Pepper Roll
+					<span class="price"> 7.00 </span>
+					<p class="description"> Pepper tuna, avocado and black tobiko </p>
+				</span>
+				<div id="modal116" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Black Pepper Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(117)"> Volcano Roll
+					<span class="price"> 7.00 </span>
+					<p class="description"> Spicy tuna and avocado wrapped with seaweed then batter fried with spicy mayo and eel sauce </p>
+				</span>
+				<div id="modal117" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Volcano Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+
+			</div>
+
+
+<!-- ____________________ VEGETABLE ROLLS  ________________________ -->
+
+			<button onclick="dropdown(11)" class="dropButton">
+				 <span class="food-category"> Vegetable Rolls </span>
+			 </button>
+
+			<div id="myDropdown11" class="dropdownContent">
+
+
+				<span class="items" onclick="openModal(119)"> Kampyo Roll
+					<span class="price"> 4.15 </span>
+				</span>
+				<div id="modal119" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Kampyo Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(120)"> Yamagonbo Roll
+					<span class="price"> 4.15 </span>
+				</span>
+				<div id="modal120" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Yamagonbo Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(121)"> Peanut Avocado Roll
+					<span class="price"> 4.15 </span>
+				</span>
+				<div id="modal121" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Peanut Avocado Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(122)"> Asparagus Shiitake Roll
+					<span class="price"> 4.15 </span>
+				</span>
+				<div id="modal122" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Asparagus Shiitake Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(123)"> Sweet Potato Tempura Roll
+					<span class="price"> 4.15 </span>
+				</span>
+				<div id="modal123" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Sweet Potato Tempura Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(124)"> Oshinko Roll
+					<span class="price"> 4.15 </span>
+				</span>
+				<div id="modal124" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Oshinko Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(125)"> Shiitake Roll
+					<span class="price"> 4.15 </span>
+				</span>
+				<div id="modal125" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Shiitake Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(126)"> Cucumber Roll
+					<span class="price"> 4.15 </span>
+				</span>
+				<div id="modal126" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Cucumber Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(127)"> Avocado Roll
+					<span class="price"> 4.15 </span>
+				</span>
+				<div id="modal127" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Avocado Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(128)"> Asparagus Roll
+					<span class="price"> 4.15 </span>
+				</span>
+				<div id="modal128" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Asparagus Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(129)"> Yasai Roll
+					<span class="price"> 4.15 </span>
+				</span>
+				<div id="modal129" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Yasai Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(130)"> House Vegetable Roll
+					<span class="price"> 5.00 </span>
+					<p class="description"> Avocado, cucumber, squash, carrot, lettuce and oshinko </p>
+				</span>
+				<div id="modal130" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							House Vegetable Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(131)"> Vegetable Dragon Roll
+					<span class="price"> 7.00 </span>
+					<p class="description"> Asparagus, cucumber, shiitake, topped with avocado </p>
+				</span>
+				<div id="modal131" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Vegetable Dragon Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+
+			</div>
+
+
+<!-- ____________________ SPECIAL ROLL COMBOS ________________________ -->
+
+			<button onclick="dropdown(12)" class="dropButton">
+				 <span class="food-category"> Special Roll Combos </span>
+				 <p class="description"> Served with Miso Soup or Salad </p>
+			 </button>
+
+			<div id="myDropdown12" class="dropdownContent">
+
+
+				<span class="items" onclick="openModal(132)">
+					Roll Combo 1 (Yellowtail Scallion Roll, Tuna Roll, Salmon Roll)
+					<span class="price"> 12.95 </span>
+				</span>
+				<div id="modal132" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Roll Combo 1
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(133)">
+					Roll Combo 2 (Spicy Tuna Roll, Salmon Avocado Roll, Eel Avocado Roll)
+					<span class="price"> 13.95 </span>
+				</span>
+				<div id="modal133" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Roll Combo 2
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(134)">
+					Roll Combo 3 (Spicy Tuna Roll, Spicy Salmon Roll, Spicy Yellowtail Roll)
+					<span class="price"> 13.95 </span>
+				</span>
+				<div id="modal134" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Roll Combo 3
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(135)">
+					Roll Combo 4 (Eel Avocado Roll, Shrimp Tempura Roll, California Roll)
+					<span class="price"> 14.95 </span>
+				</span>
+				<div id="modal135" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Roll Combo 4
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+
+			</div>
+
+
+<!-- _________________________ NARUTO _________________________________ -->
+
+			<button onclick="dropdown(13)" class="dropButton">
+				 <span class="food-category"> Naruto </span>
+			 </button>
+
+			<div id="myDropdown13" class="dropdownContent">
+
+
+				<span class="items" onclick="openModal(136)"> Snow Crab Naruto
+					<span class="price"> 10.95 </span>
+				</span>
+				<div id="modal136" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Snow Crab Naruto
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(137)"> Eel Lover Naruto
+					<span class="price"> 10.95 </span>
+				</span>
+				<div id="modal137" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Eel Lover Naruto
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(138)"> Rainbow Naruto
+					<span class="price"> 10.95 </span>
+				</span>
+				<div id="modal138" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Rainbow Naruto
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(139)"> Spicy Tuna Naruto
+					<span class="price"> 10.95 </span>
+				</span>
+				<div id="modal139" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Spicy Tuna Naruto
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(140)"> Wasabi Lobster Naruto
+					<span class="price"> 10.95 </span>
+				</span>
+				<div id="modal140" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Wasabi Lobster Naruto
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+
+			</div>
+
+
+<!-- ____________________ CHEF'S SPECIAL ROLLS ________________________ -->
+
+			<button onclick="dropdown(14)" class="dropButton">
+				 <span class="food-category"> Chef's Special Rolls </span>
+			 </button>
+
+			<div id="myDropdown14" class="dropdownContent">
+
+
+				<!-- RAW -->
+				<span class="items" onclick="openModal(141)"> Kawasaki Roll
+					<span class="price"> 11.95 </span>
+					<p class="description"> Spicy tuna, yellowtail, crunch, snow crab and masago wrapped with soy bean paper</p>
+				</span>
+				<div id="modal141" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Kawasaki Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(142)"> Mermaid Roll
+					<span class="price"> 11.95 </span>
+					<p class="description"> Tuna, yellowtail, salmon, masago, avocado, cucumber wrapped with miso seaweed </p>
+				</span>
+				<div id="modal142" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Mermaid Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(143)"> Spicy Girl Roll
+					<span class="price"> 11.95 </span>
+					<p class="description"> Pepper tuna, avocado topped with spicy salmon, wasabi tobiko and spicy sauce </p>
+				</span>
+				<div id="modal143" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Spicy Girl Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(144)"> Crazy Salmon Roll
+					<span class="price"> 11.95 </span>
+					<p class="description"> Salmon and avocado topped with spicy salmon and crunch </p>
+				</span>
+				<div id="modal144" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Crazy Salmon Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(145)"> Crazy Tuna Roll
+					<span class="price"> 11.95 </span>
+					<p class="description"> Pepper tuna, avocado and scallion inside, topped with spicy tuna, crunch and wasabi mayo </p>
+				</span>
+				<div id="modal145" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Crazy Tuna Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(146)"> Tiger Roll
+					<span class="price"> 12.95 </span>
+					<p class="description"> Salmon, tuna and avocado topped with salmon and tuna </p>
+				</span>
+				<div id="modal146" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Tiger Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(147)"> Queen Roll
+					<span class="price"> 12.95 </span>
+					<p class="description"> White tuna, salmon, asparagus inside, topped with yellowtail, white tuna, black tobiko and scallion </p>
+				</span>
+				<div id="modal147" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Queen Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(148)"> Valentines Roll
+					<span class="price"> 12.95 </span>
+					<p class="description"> Spicy tuna crunch and avocado topped with tuna and wrapped in soybean paper </p>
+				</span>
+				<div id="modal148" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Valentines Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(140)"> Seaside Roll
+					<span class="price"> 13.95 </span>
+					<p class="description"> Eel, snow crab, asparagus and cucumber inside, topped with salmon, white tuna, scallion, masago and eel sauce</p>
+				</span>
+				<div id="modal140" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Seaside Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(140)"> Out of Control Roll
+					<span class="price"> 13.95 </span>	**********************************
+					<p class="description"> Salmon, tuna, avocado, mix caviar, seaweed salad and crispy flakes on top </p>
+				</span>
+				<div id="modal140" class="myModal">
+				<div class="modal-content">
+					<span class="close" onclick="closeModal()"> &times; </span>
+					<p class="ordering">
+						Out of Control Roll
+						<span id="sp-instructions"> Special Instructions </span>
+						<textarea> </textarea>
+						<form> <input type="text" value="1"> <button> Submit </button> </form>
+					</p>
+				</div>
+			</div>
+
+				<span class="items" onclick="openModal(140)"> Fire Phoenix Roll
+					<span class="price"> 13.95 </span>
+					<p class="description"> Spicy tuna crunch roll with avocado and topped with spicy salmon and crunch </p>
+				</span>
+				<div id="modal140" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Fire Phoenix Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(149)"> Incredible Roll
+					<span class="price"> 13.95 </span>
+					<p class="description"> Spicy salmon crunch and avocado inside, topped with white tuna, green tobiko, scallion and spicy sauce </p>
+				</span>
+				<div id="modal149" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Incredible Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+
+				<!-- COOKED -->
+				<span class="items" onclick="openModal(150)"> Dancing Dragon Roll
+					<span class="price"> 11.95 </span>
+					<p class="description"> Shrimp Tempura and cucumber inside topped with eel avocado </p>
+				</span>
+				<div id="modal150" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Dancing Dragon Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(151)"> Rock N Roll
+					<span class="price"> 11.95 </span>
+					<p class="description"> Crab meat, eel, avocado and cheese wrapped with seaweed and rice then better-fried with spicy mayo and eel sauce </p>
+				</span>
+				<div id="modal151" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Rock N Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(152)"> Litchfield Roll
+					<span class="price"> 12.95 </span>
+					<p class="description"> Shrimp tempura and lobster salad inside, topped with avocado and kani salad </p>
+				</span>
+				<div id="modal152" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Litchfield Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(153)"> Sexy Roll
+					<span class="price"> 12.95 </span>
+					<p class="description"> King crab, mango and avocado inside, topped with toasted miso fish flake served with sweet and sour sauce </p>
+				</span>
+				<div id="modal153" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Sexy Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(154)"> Angel Roll
+					<span class="price"> 13.95 </span>
+					<p class="description"> Shrimp tempura, mango and wasabi lobster snow crab inside, topped with red and green tobiko </p>
+				</span>
+				<div id="modal154" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Angel Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(155)"> Connecticut Roll
+					<span class="price"> 13.95 </span>
+					<p class="description"> Shrimp tempura, snow crab, eel, avocado and masago wrapped in soybean seaweed with eel sauce </p>
+				</span>
+				<div id="modal155" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Connecticut Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(156)"> Crazy Fried Roll
+					<span class="price"> 13.95 </span>		**********************************
+					<p class="description"> King crab and mango inside, topped with cream </p>
+				</span>
+				<div id="modal156" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Crazy Fried Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+
+				<!-- MIXED RAW AND COOKED -->
+				<span class="items" onclick="openModal(157)"> Rainbow Roll
+					<span class="price"> 10.95 </span>
+					<p class="description"> California roll topped with variety of raw fish </p>
+				</span>
+				<div id="modal157" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Rainbow Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(158)"> Empire Roll
+					<span class="price"> 11.95 </span>
+					<p class="description"> Shrimp tempura and avocado inside topped with spicy tuna crunch, eel and spicy mayo sauce </p>
+				</span>
+				<div id="modal158" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Empire Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(159)"> Golden Dragon Roll
+					<span class="price"> 12.95 </span>
+					<p class="description"> Spicy tuna, avocado and crunch topped with sliced eel and wasabi tobiko </p>
+				</span>
+				<div id="modal159" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Golden Dragon Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(160)"> Ocean Roll
+					<span class="price"> 12.95 </span>
+					<p class="description"> Grilled chilean seabass, avocado, mango wrapped with soy paper, topped with crunch, scallop, triple tobiko and wasabi mayo </p>
+				</span>
+				<div id="modal160" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Ocean Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(161)"> Dinosaur Roll
+					<span class="price"> 13.95 </span>
+					<p class="description"> Spicy salmon crunch, mango, avocado, lobster tempura wrapped in soy bean paper with spicy and eel sauce </p>
+				</span>
+				<div id="modal161" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Dinosaur Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(162)"> Ninja Roll
+					<span class="price"> 13.95 </span>
+					<p class="description"> Spicy tuna, kani and cucumber inside, topped with avocado, spicy white tuna and red tobiko </p>
+				</span>
+				<div id="modal162" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Ninja Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(163)"> Red Hot Roll
+					<span class="price"> 13.95 </span>
+					<p class="description"> Eel, spicy tuna crunch and avocado inside, topped with white tuna jalapeno and chili sauce </p>
+				</span>
+				<div id="modal163" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Red Hot Roll
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+
+			</div>
+
+
+<!-- _________________________ DINNER BOX _________________________________ -->
+
+			<button onclick="dropdown(15)" class="dropButton">
+				 <span class="food-category"> Dinner Box </span>
+				 <p class="description"> Each Box Contains Shrimp Shumai, California Roll, White Rice, Tempura </p>
+				 <p class="description"> Served with Miso Soup and Salad </p>
+			 </button>
+
+			<div id="myDropdown15" class="dropdownContent">
+
+
+				<span class="items" onclick="openModal(164)"> Sushi
+					<span class="price"> 18.95 </span>
+				</span>
+				<div id="modal164" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Sushi Box
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(165)"> Sashimi
+					<span class="price"> 18.95 </span>
+				</span>
+				<div id="modal165" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Sashimi Box
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(166)"> Beef Teriyaki
+					<span class="price"> 18.95 </span>
+				</span>
+				<div id="modal166" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Beef Teriyaki Box
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(167)"> Salmon Teriyaki
+					<span class="price"> 18.95 </span>
+				</span>
+				<div id="modal167" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Salmon Teriyaki Box
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(168)"> Chicken Teriyaki
+					<span class="price"> 18.95 </span>
+				</span>
+				<div id="modal168" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Chicken Teriyaki Box
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(169)"> Shrimp Teriyaki
+					<span class="price"> 18.95 </span>
+				</span>
+				<div id="modal169" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Shrimp Teriyaki Box
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+
+			</div>
+
+
+<!-- _________________________ HIBACHI DINNER _________________________________ -->
+
+			<button onclick="dropdown(16)" class="dropButton">
+				 <span class="food-category"> Hibachi Dinner </span>
+				 <p class="description"> Includes Clear Soup, Salad, Fried Rice, Hibachi Vegetable, 2 pcs Shrimp Appetizer, Ginger & Mustard Sauce </p>
+			 </button>
+
+			<div id="myDropdown16" class="dropdownContent">
+
+
+				<span class="items" onclick="openModal(170)"> Hibachi Vegetable
+					<span class="price"> 10.95 </span>
+				</span>
+				<div id="modal170" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Hibachi Vegetable
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(171)"> Hibachi Chicken
+					<span class="price"> 14.95 </span>
+				</span>
+				<div id="modal171" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Hibachi Chicken
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(172)"> Hibachi Salmon
+					<span class="price"> 16.95 </span>
+				</span>
+				<div id="modal172" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Hibachi Salmon
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(173)"> Hibachi Steak
+					<span class="price"> 17.95 </span>
+				</span>
+				<div id="modal173" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Hibachi Steak
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(174)"> Hibachi Filet Mignon
+					<span class="price"> 19.95 </span>
+				</span>
+				<div id="modal174" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Hibachi Filet Mignon
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(175)"> Hibachi Shrimp
+					<span class="price"> 17.95 </span>
+				</span>
+				<div id="modal175" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Hibachi Shrimp
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(176)"> Hibachi Scallop
+					<span class="price"> 17.95 </span>
+				</span>
+				<div id="modal176" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Hibachi Scallop
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(177)"> Hibachi Chilean Seabass
+					<span class="price"> 22.95 </span>
+				</span>
+				<div id="modal177" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Hibachi Chilean Seabass
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(178)"> Hibachi Lobster Tail
+					<span class="price"> 28.95 </span>
+				</span>
+				<div id="modal178" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Hibachi Lobster Tail
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+			</div>
+
+
+<!-- _________________________ HIBACHI DINNER COMBO _________________________________ -->
+
+			<button onclick="dropdown(17)" class="dropButton">
+				 <span class="food-category"> Hibachi Dinner Combo </span>
+				 <p class="description"> Includes everything under Hibachi Dinner </p>
+			 </button>
+
+			<div id="myDropdown17" class="dropdownContent">
+
+
+				<span class="items" onclick="openModal(179)"> Salmon & Chicken
+					<span class="price"> 18.95 </span>
+				</span>
+				<div id="modal179" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Salmon & Chicken Combo
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(180)"> Chicken & Shrimp
+					<span class="price"> 18.95 </span>
+				</span>
+				<div id="modal180" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Chicken & Shrimp Combo
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(181)"> Steak & Chicken
+					<span class="price"> 18.95 </span>
+				</span>
+				<div id="modal181" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Steak & Chicken Combo
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(182)"> Steak & Salmon
+					<span class="price"> 18.95 </span>
+				</span>
+				<div id="modal182" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Steak & Salmon
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(183)"> Filet Mignon & Chicken
+					<span class="price"> 18.95 </span>
+				</span>
+				<div id="modal183" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Filet Mignon & Chicken
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(184)"> Steak & Shrimp
+					<span class="price"> 18.95 </span>
+				</span>
+				<div id="modal184" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Steak & Shrimp Combo
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(185)"> Filet Mignon & Shrimp
+					<span class="price"> 18.95 </span> </span>
+				<div id="modal185" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Filet Mignon & Shrimp Combo
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(186)"> Scallop & Shrimp
+					<span class="price"> 18.95 </span> </span>
+				<div id="modal186" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Scallop & Shrimp Combo
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(187)"> Steak & Scallop
+					<span class="price"> 18.95 </span> </span>
+				<div id="modal187" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Steak & Scallop Combo
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(188)"> Filet Mignon & Scallop
+					<span class="price"> 18.95 </span>
+				</span>
+				<div id="modal188" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Filet Mignon & Scallop Combo
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(189)"> Steak & Lobster Tail
+					<span class="price"> 18.95 </span>
+				</span>
+				<div id="modal189" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Steak & Lobster Tail Combo
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(190)"> Filet Mignon & Lobster Tail
+					<span class="price"> 18.95 </span>
+				</span>
+				<div id="modal190" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Filet Mignon & Lobster Tail Combo
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(191)"> Seafood Combination
+					<span class="price"> 18.95 </span>
+					<p class="description"> Shrimp, Scallop, & Lobster Tail </p>
+				</span>
+				<div id="modal191" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Seafood Combo
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+
+			</div>
+
+
+<!-- _________________________ KID'S MENU _________________________________ -->
+
+			<button onclick="dropdown(18)" class="dropButton">
+				 <span class="food-category"> Kid's Menu </span>
+				 <p class="description"> Includes Fried Rice, 1 pc Shrimp Appetizer, Hibachi Vegetable, and a Clear Soup or Salad </p>
+			 </button>
+
+			<div id="myDropdown18" class="dropdownContent">
+
+
+				<span class="items" onclick="openModal(192)"> Hibachi Chicken Junior
+					<span class="price"> 10.00 </span>
+				</span>
+				<div id="modal192" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Hibachi Chicken Junior
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(193)"> Hibachi Shrimp Junior
+					<span class="price"> 10.00 </span>
+				</span>
+				<div id="modal193" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Hibachi Shrimp Junior
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(194)"> Hibachi Scallop Junior
+					<span class="price"> 10.00 </span>
+				</span>
+				<div id="modal194" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Hibachi Scallop Junior
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(195)"> Hibachi Steak Junior
+					<span class="price"> 10.00 </span>
+				</span>
+				<div id="modal195" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Hibachi Steak Junior
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(196)"> Hibachi Salmon Junior
+					<span class="price"> 10.00 </span>
+				</span>
+				<div id="modal196" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Hibachi Salmon Junior
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+
+			</div>
+
+
+<!-- _________________________ SIDE ORDER _________________________________ -->
+
+			<button onclick="dropdown(19)" class="dropButton">
+				 <span class="food-category"> Side Order </span>
+			 </button>
+
+			<div id="myDropdown19" class="dropdownContent">
+
+
+				<span class="items" onclick="openModal(197)"> Hibachi Chicken
+					<span class="price"> 6.00 </span> </span>
+				<div id="modal197" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Side Hibachi Chicken
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(198)"> Hibachi Vegetable
+					<span class="price"> 4.00 </span>
+				</span>
+				<div id="modal198" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Side Hibachi Vegetable
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(199)"> Hibachi Salmon
+					<span class="price"> 6.00 </span>
+				</span>
+				<div id="modal199" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Side Hibachi Salmon
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(200)"> Hibachi Steak
+					<span class="price"> 7.00 </span>
+				</span>
+				<div id="modal200" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Side Hibachi Steak
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(201)"> Hibachi Shrimp
+					<span class="price"> 7.00 </span>
+				</span>
+				<div id="modal201" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Side Hibachi Shrimp
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(202)"> Hibachi Scallop
+					<span class="price"> 7.00 </span>
+				</span>
+				<div id="modal202" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Side Hibachi Scallop
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(203)"> Fried Rice
+					<span class="price"> 3.00 </span>
+				</span>
+				<div id="modal203" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Side Fried Rice
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(204)"> Noodle
+					<span class="price"> 3.00 </span>
+				</span>
+				<div id="modal204" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Side Hibachi Noodle
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+
+			</div>
+
+
+<!-- _________________________ KITCHEN ENTREES _________________________________ -->
+
+			<button onclick="dropdown(20)" class="dropButton">
+				 <span class="food-category"> Kitchen Entrees </span>
+				 <p class="description"> Served with White Rice & Miso Soup or Salad </p>
+			 </button>
+
+			<div id="myDropdown20" class="dropdownContent">
+
+
+				<span class="items" onclick="openModal(205)"> Chicken Teriyaki
+					<span class="price"> 13.95 </span>
+				</span>
+				<div id="modal205" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Chicken Teriyaki
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(206)"> Beef Teriyaki
+					<span class="price"> 15.95 </span>
+				</span>
+				<div id="modal206" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Beef Teriyaki
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(207)"> Salmon Teriyaki
+					<span class="price"> 13.95 </span>
+				</span>
+				<div id="modal207" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Salmon Teriyaki
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(208)"> Shrimp Teriyaki
+					<span class="price"> 15.95 </span>
+				</span>
+				<div id="modal208" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Shrimp Teriyaki
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(209)"> Beef Negimaki
+					<span class="price"> 15.95 </span>
+				</span>
+				<div id="modal209" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Beef Negimaki
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(210)"> Chicken Negimaki
+					<span class="price"> 13.95 </span> </span>
+				<div id="modal210" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Chicken Negimaki
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(211)"> Chicken Katsu
+					<span class="price"> 11.95 </span>
+					<p class="description"> Breaded fried chicken served with tonkatsu </p>
+				</span>
+					<div id="modal211" class="myModal">
+						<div class="modal-content">
+							<span class="close" onclick="closeModal()"> &times; </span>
+							<p class="ordering">
+								Chicken Katsu
+								<span id="sp-instructions"> Special Instructions </span>
+								<textarea> </textarea>
+								<form> <input type="text" value="1"> <button> Submit </button> </form>
+							</p>
+						</div>
+					</div>
+
+				<span class="items" onclick="openModal(212)"> Tonkatsu
+					<span class="price"> 11.95 </span>
+					<p class="description"> Breaded fried pork loin served with tonkatsu sauce </p>
+				</span>
+					<div id="modal212" class="myModal">
+						<div class="modal-content">
+							<span class="close" onclick="closeModal()"> &times; </span>
+							<p class="ordering">
+								Tonkatsu
+								<span id="sp-instructions"> Special Instructions </span>
+								<textarea> </textarea>
+								<form> <input type="text" value="1"> <button> Submit </button> </form>
+							</p>
+						</div>
+					</div>
+
+				<span class="items" onclick="openModal(213)"> Pork or Chicken Katsu Don
+					<span class="price"> 10.00 </span>
+					<p class="description"> Breaded fried pork or chicken cutlet with egg and onion over rice </p>
+				</span>
+					<div id="modal213" class="myModal">
+						<div class="modal-content">
+							<span class="close" onclick="closeModal()"> &times; </span>
+							<p class="ordering">
+								Katsu Don
+								<div class="choice">
+									<button> Pork Katsu Don </button>
+									<button> Chicken Katsu Don </button>
+								</div>
+								<span id="sp-instructions"> Special Instructions </span>
+								<textarea> </textarea>
+								<form> <input type="text" value="1"> <button> Submit </button> </form>
+							</p>
+						</div>
+					</div>
+
+				<span class="items" onclick="openModal(214)"> Shrimp & Vegetable Tempura
+					<span class="price"> 13.95 </span>
+				</span>
+				<div id="modal214" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Shrimp & Vegetable Tempura
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(215)"> Vegetable Tempura
+					<span class="price"> 10.95 </span>
+				</span>
+				<div id="modal215" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Vegetable Tempura
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(216)"> Tofu Teriyaki
+					<span class="price"> 10.95 </span>
+				</span>
+				<div id="modal216" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Tofu Teriyaki
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(217)"> Seafood Teriyaki
+					<span class="price"> 18.95 </span>
+				</span>
+				<div id="modal217" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Seafood Teriyaki
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(218)"> Steamed or Grilled Chilean Seabass
+					<span class="price"> 19.95 </span>
+					<p class="description"> with Chinese bok choy and asparagus served with chef's special sauce </p>
+				</span>
+					<div id="modal218" class="myModal">
+						<div class="modal-content">
+							<span class="close" onclick="closeModal()"> &times; </span>
+							<p class="ordering">
+								Chilean Seabass
+								<div class="choice">
+									<button> Steamed Chilean Seabass </button>
+									<button> Grilled Chilean Seabass </button>
+								</div>
+								<span id="sp-instructions"> Special Instructions </span>
+								<textarea> </textarea>
+								<form> <input type="text" value="1"> <button> Submit </button> </form>
+							</p>
+						</div>
+					</div>
+
+
+			</div>
+
+
+<!-- _________________________ NOODLE _________________________________ -->
+
+			<button onclick="dropdown(21)" class="dropButton">
+				 <span class="food-category"> Noodle </span>
+				 <p class="description"> Served with Salad </p>
+			 </button>
+
+			<div id="myDropdown21" class="dropdownContent">
+
+
+				<span class="items" onclick="openModal(219)"> Yaki Udon
+					<span class="price"> 10.95 </span>
+					<p class="description"> Stir fried noodle with chicken or beef </p>
+				</span>
+					<div id="modal219" class="myModal">
+						<div class="modal-content">
+							<span class="close" onclick="closeModal()"> &times; </span>
+							<p class="ordering">
+								Yaki Udon
+								<div class="choice">
+									<button> Chicken Yaki Udon </button>
+									<button> Beef Yaki Udon	</button>
+								</div>
+								<span id="sp-instructions"> Special Instructions </span>
+								<textarea> </textarea>
+								<form> <input type="text" value="1"> <button> Submit </button> </form>
+							</p>
+						</div>
+					</div>
+
+				<span class="items" onclick="openModal(220)"> Chicken Udon
+					<span class="price"> 10.95 </span>
+					<p class="description"> Noodle soup with vegetable and chicken </p>
+				</span>
+					<div id="modal220" class="myModal">
+						<div class="modal-content">
+							<span class="close" onclick="closeModal()"> &times; </span>
+							<p class="ordering">
+								Chicken Udon
+								<span id="sp-instructions"> Special Instructions </span>
+								<textarea> </textarea>
+								<form> <input type="text" value="1"> <button> Submit </button> </form>
+							</p>
+						</div>
+					</div>
+
+				<span class="items" onclick="openModal(221)"> Tempura Udon
+					<span class="price"> 11.95 </span>
+					<p class="description"> Noodle soup with shrimp and vegetable tempura </p>
+				</span>
+					<div id="modal221" class="myModal">
+						<div class="modal-content">
+							<span class="close" onclick="closeModal()"> &times; </span>
+							<p class="ordering">
+								Tempura Udon
+								<span id="sp-instructions"> Special Instructions </span>
+								<textarea> </textarea>
+								<form> <input type="text" value="1"> <button> Submit </button> </form>
+							</p>
+						</div>
+					</div>
+
+				<span class="items" onclick="openModal(222)"> Nabeyaki Udon
+					<span class="price"> 12.95 </span>
+					<p class="description"> Noodle soup with crab stick, egg, chicken, vegetable and shrimp tempura </p>
+				</span>
+					<div id="modal222" class="myModal">
+						<div class="modal-content">
+							<span class="close" onclick="closeModal()"> &times; </span>
+							<p class="ordering">
+								Nabeyaki Udon
+								<span id="sp-instructions"> Special Instructions </span>
+								<textarea> </textarea>
+								<form> <input type="text" value="1"> <button> Submit </button> </form>
+							</p>
+						</div>
+					</div>
+
+				<span class="items" onclick="openModal(223)"> Vegetable Udon
+					<span class="price"> 8.95 </span>
+				</span>
+				<div id="modal223" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Vegetable Udon
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(224)"> Vegetable Yaki Udon
+					<span class="price"> 8.95 </span>
+				</span>
+				<div id="modal224" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Vegetable Yaki Udon
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+
+			</div>
+
+
+<!-- _________________________ SUSHI BAR ENTREES _________________________________ -->
+
+			<button onclick="dropdown(22)" class="dropButton">
+				 <span class="food-category"> Sushi Bar Entrees </span>
+				 <p class="description"> Served with Miso Soup or Salad </p>
+			 </button>
+
+			<div id="myDropdown22" class="dropdownContent">
+
+
+				<span class="items" onclick="openModal(225)"> Kawasaki Sushi
+					<span class="price"> 18.95 </span>
+					<p class="description"> 2 pcs tuna, salmon, yellowtail, eel and shrimp tempura roll </p>
+				</span>
+				<div id="modal225" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Kawasaki Sushi
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(226)"> Sushi Dinner
+					<span class="price"> 17.95 </span>
+					<p class="description"> 9 pcs assorted sushi and tuna roll </p>
+				</span>
+				<div id="modal226" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Sushi Dinner
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(227)"> Sushi Lover
+					<span class="price"> 26.95 </span>
+					<p class="description"> 11 pcs assorted sushi and your choice of a chef's special roll </p>
+				</span>
+				<div id="modal227" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Sushi Lover
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(228)"> Sashimi Dinner
+					<span class="price"> 20.95 </span>
+					<p class="description"> 16 pcs assorted sashimi </p>
+				</span>
+				<div id="modal228" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Sashimi Dinner
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(229)"> Sashimi For 2
+					<span class="price"> 40.95 </span>
+					<p class="description"> 30 pcs special assorted sashimi </p>
+				</span>
+				<div id="modal229" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Sashimi For 2
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(230)"> Sushi Sashimi Combo
+					<span class="price"> 21.95 </span>
+					<p class="description"> 5 pcs sushi and 11 pcs sashimi with California roll </p>
+				</span>
+				<div id="modal230" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Sushi Sashimi Combo
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(231)"> Chirashi
+					<span class="price"> 17.95 </span>
+					<p class="description"> Variety of raw fish over sushi rice </p>
+				</span>
+				<div id="modal231" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Chirashi
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(232)"> Unagi Don
+					<span class="price"> 15.95 </span>
+					<p class="description"> Broiled eel over rice </p>
+				</span>
+				<div id="modal232" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Unagi Don
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(233)"> Triple Don
+					<span class="price"> 18.95 </span>
+					<p class="description"> Tuna, salmon and yellowtail over sushi rice </p>
+				</span>
+				<div id="modal233" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Triple Don
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(234)"> Sushi For 2
+					<span class="price"> 45.95 </span>
+					<p class="description"> 18 pcs assorted sushi, dragon roll and your choice of a chef's special roll </p>
+				</span>
+				<div id="modal234" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Sushi For 2
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+				<span class="items" onclick="openModal(235)"> Sushi Sashimi For 2
+					<span class="price"> 50.95 </span>
+					<p class="description"> 8 pcs assorted sushi, 16 pcs sashimi, volcano roll and your choice of a chef's special roll </p>
+				</span>
+				<div id="modal235" class="myModal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()"> &times; </span>
+						<p class="ordering">
+							Sushi Sashimi For 2
+							<span id="sp-instructions"> Special Instructions </span>
+							<textarea> </textarea>
+							<form> <input type="text" value="1"> <button> Submit </button> </form>
+						</p>
+					</div>
+				</div>
+
+
+			</div>
+
+
+
+		</div>
+
+<!-- _____________________ SHOPPING CART HERE ___________________ -->
+
+		<div id="shopping-cart">
+			<p> Your Order </p>
+
+			<!-- FOOD ITEMS GO HERE WHEN ORDERED -->
+
+			<hr> </hr>
+			<p> Total: <span id="total"> $0.00 </span> </p>
+			<button> Checkout </button>
+		</div>
+
+		<script src="main.js">	</script>
+
+	</body>
+
+
+</html>
