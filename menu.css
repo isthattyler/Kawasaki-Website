@@ -19,7 +19,7 @@ a.nav {
 	text-decoration: none;
 }
 
-a:visited {
+a:visited, a {
 	color: white;
 }
 

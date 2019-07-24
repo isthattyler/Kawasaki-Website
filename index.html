@@ -2,7 +2,7 @@
 
 	<head>
 		<title> Kawasaki Restaurant </title>
-		<link rel = "stylesheet" type = "text/css" href = "index.css" />
+		<link rel = "stylesheet" type = "text/css" href = "main.css" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 
@@ -12,28 +12,66 @@
 			<div id="title"> Kawasaki Japanese Restaurant </div>
 
 			<div id="pages">
-				<a href="index.html" class="nav"> Home</a>
-				<a href="menu.html" class="nav"> Menu</a>
-				<a href="gallery.html" class="nav"> Gallery</a>
+				<a href="index.html" class="nav">Home</a>
+				<a href="menu.html" class="nav">Menu</a>
+				<a href="gallery.html" class="nav">Gallery</a>
+				<a href="faq.html" class="nav">FAQ</a>
 			</div>
+
+
+			<div id="mySideNav" class="sidenav">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			  <a href="index.html">Home</a>
+			  <a href="menu.html">Menu</a>
+			  <a href="gallery.html">Gallery</a>
+			  <a href="faq.html">FAQ</a>
+
+				<div id="sidebar-open">
+
+					<p class="sidebar-info"> Hours: </p>
+					<p class="sidebar-info"> Mon - Thur 11:30 - 10 </p>
+					<p class="sidebar-info"> Fri - Sat <br>
+						11:30 - 11 </p>
+				  <p class="sidebar-info"> Sun <br>
+						12 to 10 </p>
+
+				  <p class="sidebar-info">
+						<div> 860-361-6142 </div>
+				  </p>
+
+					8 Village Green Dr. <br>
+					Litchfield, CT 06759
+
+				</div>
+
+			</div>
+
+
+			<span id="sideNavSpan" onclick=openNav()>&#9776; </span>
+
+
 		</div>
 
 
 		<div id="info-container">
 
 			<div id="open">
-				<div id = "days"> Hours: <br>
-					&nbsp; &nbsp; &nbsp; Monday - Thursday <br>
-					&nbsp; &nbsp; &nbsp; Friday - Saturday <br>
-					&nbsp; &nbsp; &nbsp; Sunday
-				</div>
 
 				<div id = "hours">
+					Hours:
+					<p id="days"> Monday - Thursday </p>
+					<p id="days"> Friday - Saturday </p>
+					<p id="days"> Sunday </p>
+				</div>
+
+				<div id = "hours-open">
 					11:30am to 10:00pm	 <br>
 					11:30am to 11:00pm	 <br>
 					12:00pm to 10:00pm   <br>
 				</div>
+
 			</div>
+
 
 			<div id = "general-info"> Tel: 860-361-6142
 				<br> 8 Village Green Dr.
@@ -41,6 +79,8 @@
 			</div>
 
 		</div>
+
+		<script src="main.js"> </script>
 
 	</body>
 

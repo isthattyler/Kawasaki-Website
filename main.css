@@ -1,0 +1,335 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@keyframes bgfade {
+	0%   { background-image: url("images/japan.jpg");  background-size: 100vw 80vh;}
+	33%  { background-image: url("images/sushi.jpg");	 background-size: 100vw 80vh;}
+	50%  { background-image: url("images/sushi2.jpg"); background-size: 100vw 80vh;}
+	100% { background-image: url("images/japan.jpg");  background-size: 100vw 80vh;}
+}
+
+
+
+/* *************** BODY with links ************* */
+body {
+	background-color: #0A0A0C;
+	font-family: Garamond;
+	background-image: url("images/sushi.jpg");
+	background-repeat: no-repeat;
+	animation: bgfade 10s ease infinite;
+}
+
+a.nav {
+	text-decoration: none;
+}
+
+a:visited, a {
+	color: white;
+}
+
+/* **************** TOP SECTION **************** */
+#top {
+	border-top: lightgreen solid 2px;
+	border-bottom: lightgreen solid 2px;
+	background-color: black;
+	width: 100%;
+	display: inline-flex;
+	align-items: center;
+}
+
+#title {
+	color: white;
+	text-indent: 10px;
+	font-size: 50px;;
+	text-shadow: 2px 2px black;
+}
+
+#pages {
+	color: white;
+	position: absolute;
+	right: 1vw;
+	font-size: 25px;
+	word-spacing: 40px;
+	text-shadow: 2px 2px black;
+}
+/* ********************************************** */
+
+
+
+/* bottom container for general info */
+#info-container {
+	display: inline-flex;
+	align-items: flex-end;
+	justify-content: space-around;
+	position: absolute;
+	bottom: 15px;
+	height: 130px;
+	margin-left: 10vw;
+	width: 70vw;
+}
+
+#open {
+	display: inline-flex;
+	align-items: flex-end;
+	justify-content: center;
+	width: 50vw;
+}
+
+#hours-open, #hours, #days {
+	color: skyblue;
+	line-height: 1.2;
+	font-size: 30px;
+	padding-left: 30px;
+}
+
+#general-info {
+	color: skyblue;
+	line-height: 1.2;
+	font-size: 30px;
+}
+
+#sideNavSpan, #mySideNav {
+	display: none;
+}
+
+/* _________________________ MEDIA QUERIES ___________________________
+media query typical widths for min-width = 320, 481, 641, 961, 1025, 1281*/
+
+
+/* ************ MEDIA QUERY ********* */
+@media (max-width: 1300px) {
+	#title {
+		font-size: 35px;
+	}
+
+	#pages {
+		font-size: 20px;
+		word-spacing: 40px;
+	}
+
+	/* bottom container for general info */
+	#info-container {
+		display: inline-block;
+		align-items: flex-end;
+		justify-content: space-around;
+		position: absolute;
+		bottom: 20px;
+		height: 150px;
+		margin-left: 15vw;
+		width: 70vw;
+	}
+
+	#open {
+		display: inline-flex;
+		align-items: flex-end;
+		justify-content: center;
+		width: 40vw;
+	}
+
+	#hours-open, #days, #hours {
+		line-height: 1.5;
+		font-size: 20px;
+		padding-left: 30px;
+	}
+
+	#general-info {
+		line-height: 1.5;
+		font-size: 20px;
+	}
+}
+
+
+/* ************ MEDIA QUERY ********* */
+@media (max-width: 1025px) {
+	#title {
+		font-size: 35px;
+	}
+
+	#pages {
+		font-size: 20px;
+		word-spacing: 40px;
+	}
+
+	/* bottom container for general info */
+	#info-container {
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-around;
+		position: absolute;
+		bottom: 20px;
+		height: 150px;
+		width: 80vw;
+		margin-left: 2vw;
+	}
+
+	#open {
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+		width: 65vw;
+	}
+
+	#hours-open, #days, #hours {
+		line-height: 1.5;
+		font-size: 20px;
+		padding-left: 30px;
+	}
+
+	#general-info {
+		line-height: 1.5;
+		font-size: 20px;
+	}
+}
+
+/* ************ MEDIA QUERY ********* */
+@media (max-width: 945px) {
+	#title {
+		font-size: 30px;
+	}
+
+	#pages {
+		font-size: 15px;
+		word-spacing: 40px;
+	}
+
+	/* bottom container for general info */
+	#info-container {
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-around;
+		position: absolute;
+		bottom: 30px;
+		height: 150px;
+		width: 90vw;
+		margin-left: 2vw;
+	}
+
+	#open {
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+		width: 60vw;
+	}
+
+	#hours-open, #days, #hours {
+		line-height: 1.5;
+		font-size: 17px;
+		padding-left: 30px;
+	}
+
+	#general-info {
+		line-height: 1.5;
+		font-size: 17px;
+	}
+}
+
+
+/* __________________________________________________________________ */
+
+/* MEDIA QUERY - APPEARANCE CHANGES HERE  */
+@media (max-width: 700px) {
+	#pages, #open, #general-info {
+		display: none;
+	}
+
+	@keyframes bgfade {
+		0%   { background-image: url("images/japan.jpg");  background-size: 100vw 100vh;}
+		33%  { background-image: url("images/sushi.jpg");	 background-size: 100vw 100vh;}
+		50%  { background-image: url("images/sushi2.jpg"); background-size: 100vw 100vh;}
+		100% { background-image: url("images/japan.jpg");  background-size: 100vw 100vh;}
+	}
+
+	#title {
+		font-size: 25px;
+		display: inline-block;
+	}
+
+	#sideNavSpan, #mySideNav {
+		display: inline-block;
+	}
+
+	#sidebar-open {
+		font-size: 15px;
+		color: white;
+		padding-top: 30px;
+	}
+
+	/* ********** Side Navigation ********** */
+	#sideNavSpan {
+		font-size: 30px;
+		cursor: pointer;
+		color: white;
+		position: absolute;
+		right: 1%;
+		display: inline-block;
+	}
+
+	#mySideNav {
+		display: inline-block;
+	}
+
+	.sidenav {
+	  height: 100%;
+	  width: 0;
+		position: absolute;
+	  top: 0;
+	  right: 0;
+	  z-index: 1;
+	  background-color: #111;
+	  overflow-x: hidden;
+	  transition: 0.5s;
+	  padding-top: 60px;
+	}
+
+	.sidenav a {
+	  padding: 8px 8px 8px 32px;
+	  text-decoration: none;
+	  font-size: 25px;
+	  color: #818181;
+	  display: block;
+	  transition: 0.3s;
+	}
+
+	.sidenav a:hover {
+	  color: #f1f1f1;
+	}
+
+	.closebtn {
+		position: absolute;
+		right: 10px;
+		top: 10px;
+	}
+
+	#sidebar-open {
+		padding: 32px 8px 8px 32px;
+	  font-size: 15px;
+	  color: white;
+	}
+
+	.sidebar-info {
+		padding-bottom: 15px;
+	}
+
+
+}
+
+
+
+@media (max-width: 450px) {
+
+	#title {
+		font-size: 25px;
+		display: inline-block;
+	}
+
+	.sidenav a {
+	  font-size: 20px;
+	}
+
+	#sidebar-open {
+	  font-size: 15px;
+	}
+
+}
