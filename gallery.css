@@ -1,5 +1,10 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
 body {
-	background-color: #86C9F6;
+	background-color: #1F7EFA;
   background-repeat: no-repeat;
 	font-family: Garamond;
 }
@@ -12,56 +17,47 @@ a:visited, a {
 	color: white;
 }
 
+/* **************** TOP SECTION **************** */
+#top {
+	border-bottom: lightgreen solid 2px;
+	background-color: black;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
 #title {
 	color: white;
-	position: absolute;
-	top: 1%;
-	left: 1%;
-	font-size: 3vw;
-	text-shadow: 1px 1px black;
+	text-indent: 10px;
+	font-size: 40px;;
+	text-shadow: 2px 2px black;
 }
 
 #pages {
 	color: white;
 	position: absolute;
-	top: 1%;
-	right: 1em;
-	font-size: 1.5vw;
-	word-spacing: 1em;
-	text-shadow: 1px 1px black;
+	right: 15px;
+	font-size: 25px;
+	word-spacing: 40px;
+	text-shadow: 2px 2px black;
 }
 
+#sideNavSpan, #mySideNav {
+	display: none;
+}
+
+
+/* *********** gallery ************/
 #container {
 	display: flex;
-	flex-flow: row wrap;
+	flex-wrap: wrap;
 	justify-content: center;
 }
 
 .gallery {
 	position: relative;
-	top: 10vh;
-	margin: 2vw;
-}
-
-.image {
-	opacity: 1;
-	display: block;
-	transition: 0.5 ease;
-	backface-visibility: hidden;
-	width: 20vw;
-	height: 20vh;
-	display: inline-block;
-}
-
-.middle {
-	transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
+	top: 10px;
+	padding: 30px;
 }
 
 .gallery:hover .image {
@@ -72,10 +68,173 @@ a:visited, a {
   opacity: 1;
 }
 
+/* ************* image ************** */
+
+.image {
+	opacity: 1;
+	transition: 0.5s ease;
+	backface-visibility: hidden;
+	width: 300px;
+	height: 175px;
+}
+
+/* ************* text ************** */
+
+.middle {
+	transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 .text {
 	background-color: #F6475E;
   color: white;
-  font-size: 1.5vw;
+  font-size: 20px;
 	text-shadow: black;
-	padding: 0.5vw 0.7vw;
+	padding: 10px;
+}
+
+
+/* _________________________ MEDIA QUERIES ___________________________
+media query typical widths for min-width = 320, 481, 641, 961, 1025, 1281*/
+
+
+/* ************ MEDIA QUERY ********* */
+@media (max-width: 1080px) {
+	#title {
+		font-size: 40px;
+	}
+
+	#pages {
+		font-size: 20px;
+	}
+
+	.image {
+		width: 400px;
+		height: 200px;
+	}
+}
+
+@media (max-width: 919px) {
+	#title {
+		font-size: 40px;
+	}
+
+	.gallery {
+		padding: 10px;
+	}
+
+	.image {
+		width: 600px;
+		height: 300px;
+	}
+
+	#pages {
+		display: none;
+	}
+
+	#sideNavSpan, #mySideNav {
+		display: inline-block;
+	}
+
+	#sidebar-open {
+		font-size: 15px;
+		color: white;
+		padding-top: 30px;
+	}
+
+	/* ********** Side Navigation ********** */
+	#sideNavSpan {
+		font-size: 30px;
+		cursor: pointer;
+		color: white;
+		position: absolute;
+		right: 1%;
+		display: inline-block;
+	}
+
+	#mySideNav {
+		display: block;
+	}
+
+	.sidenav {
+		height: 100%;
+		width: 0;
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 1;
+		background-color: #111;
+		overflow-x: hidden;
+		transition: 0.5s;
+		padding-top: 60px;
+	}
+
+	.sidenav a {
+		padding: 15 0;
+		text-decoration: none;
+		font-size: 25px;
+		color: #818181;
+		transition: 0.3s;
+		display: flex;
+		justify-content: center;
+	}
+
+	.sidenav a:hover {
+		color: #f1f1f1;
+	}
+
+	.closebtn {
+		position: absolute;
+		right: 10px;
+		top: 10px;
+	}
+
+	#sidebarHoursContainer {
+	 margin-top: 75px;
+	}
+
+	.sidebar-hours {
+		font-size: 20px;
+		color: white;
+		display: flex;
+		justify-content: center;
+		padding: 10 0;
+	}
+
+	#space {
+	 padding-right: 40px;
+	}
+}
+
+
+@media (max-width: 650px) {
+	#title {
+		font-size: 30px;
+	}
+
+	.image {
+		width: 350px;
+		height: 200px;
+	}
+}
+
+@media (max-width: 400px) {
+	#title {
+		font-size: 20px;
+	}
+
+	#sideNavSpan {
+		font-size: 18px;
+	}
+
+	.image {
+		width: 300px;
+		height: 175px;
+	}
 }

@@ -7,16 +7,42 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 
-
 	<body>
 
-		<div id = "title"> Kawasaki Japanese Restaurant </div>
+		<div id="top">
+			<div id="title"> Kawasaki Japanese Restaurant </div>
+
+			<div id="pages">
+				<a href="index.html" class="nav">Home</a>
+				<a href="menu.html" class="nav">Menu</a>
+				<a href="gallery.html" class="nav">Gallery</a>
+				<!-- <a href="faq.html" class="nav">FAQ</a> -->
+			</div>
 
 
-		<div id = "pages">
-			<a href="index.html" class="nav"> Home</a>
-			<a href="menu.html" class="nav"> Menu</a>
-			<a href="gallery.html" class="nav"> Gallery </a>
+			<div id="mySideNav" class="sidenav">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			  <a href="index.html">Home</a>
+			  <a href="menu.html">Menu</a>
+			  <a href="gallery.html">Gallery</a>
+			  <!-- <a href="faq.html">FAQ</a> -->
+
+
+				<div id="sidebarHoursContainer">
+					<div class="sidebar-hours"> <span id="space"> Mon - Thu </span> 11:30 - 10:00 </div>
+					<div class="sidebar-hours"> <span id="space"> Fri - Sat </span> 11:30 - 11:00 </div>
+				  <div class="sidebar-hours"> <span id="space"> Sun </span> 12:00 - 10:00 </div>
+
+					<div class="sidebar-hours"> 860-361-6142 </div>
+					<div class="sidebar-hours"> 8 Village Green Dr. Litchfield, CT 06759 </div>
+				</div>
+
+			</div>
+
+
+			<span id="sideNavSpan" onclick=openNav()>&#9776; </span>
+
+
 		</div>
 
 
