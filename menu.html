@@ -5,6 +5,7 @@
 		<title> Kawasaki Restaurant </title>
 		<link rel ="stylesheet" type ="text/css" href ="menu.css" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="menu.js" async>	</script>
 	</head>
 
 	<body>
@@ -46,6 +47,31 @@
 		</div>
 
 
+		<!-- _____________________ SHOPPING CART HERE ___________________ -->
+
+		<!-- TESTING -->
+		<center>
+				<section class="container content-section">
+					<h2 class="section-header">Your Order</h2>
+
+					<div class="cart-row">
+							<span class="cart-item cart-header cart-column">ITEM</span>
+							<span class="cart-price cart-header cart-column">PRICE</span>
+							<span class="cart-quantity cart-header cart-column">QUANTITY</span>
+					</div>
+					<div class="cart-items">
+					</div>
+					<div class="cart-total">
+							<strong class="cart-total-title">Total</strong>
+							<span class="cart-total-price">$0</span>
+					</div>
+					<button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+				</section>
+		</center>
+
+		<!-- ............................................................ -->
+
+
 <!-- ____________________ LUNCH ________________________ -->
 
 		<div class="lunch-container">
@@ -64,21 +90,28 @@
 
 			<div id="myDropdown1" class="dropdownContent">
 
+<!-- TESTING ........................................................ -->
+				<div class="menu-item">
+					<span class="items" onclick="openModal(1)">
+						<span class="itemName"> Chicken Teriyaki </span>
+						<span class="price"> 9.00 </span>
+					</span>
 
-				<span class="items" onclick="openModal(1)"> Chicken Teriyaki
-					<span class="price"> 9.00 </span>
-				</span>
-				<div id="modal1" class="myModal">
-					<div class="modal-content">
-						<span class="close" onclick="closeModal()"> &times; </span>
-						<p class="ordering">
-							Chicken Teriyaki
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
-						</p>
+					<div id="modal1" class="myModal">
+						<div class="modal-content">
+							<span class="close" onclick="closeModal()"> &times; </span>
+							<p class="ordering">
+								Chicken Teriyaki
+								<form>
+									<input type="text" value="1" size="1">
+									<button class="cart-button"> Add to Cart </button>
+								</form>
+							</p>
+						</div>
 					</div>
 				</div>
+<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+
 
 				<span class="items" onclick="openModal(2)"> Salmon Teriyaki
 					<span class="price"> 9.00 </span>
@@ -88,9 +121,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Salmon Teriyaki
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1" size="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -103,9 +135,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Beef Teriyaki
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1" size="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -118,9 +149,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Pork Katsu
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1" size="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -133,9 +163,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Chicken Katsu
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1" size="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -148,9 +177,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Chicken Negimaki
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1" size="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -163,9 +191,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Beef Negimaki
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1" size="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -178,9 +205,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Shrimp Tempura
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1" size="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -207,9 +233,8 @@
 						<span class="close" onclick="closeModal(9)"> &times; </span>
 						<p class="ordering">
 							Hibachi Vegetable
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1" size="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -222,9 +247,8 @@
 						<span class="close" onclick="closeModal(10)"> &times; </span>
 						<p class="ordering">
 							Hibachi Chicken
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1" size="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -237,9 +261,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Hibachi Shrimp
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1" size="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -252,9 +275,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Hibachi Steak
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1" size="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -267,9 +289,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Hibachi Salmon
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1" size="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -282,9 +303,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Hibachi Scallop
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1" size="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -312,9 +332,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Sushi Lunch
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1" size="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -328,9 +347,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Chirashi Lunch
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1" size="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -344,9 +362,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Sushi Sashimi Combo
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1" size="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -360,9 +377,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Sushi Lunch
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1" size="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -376,9 +392,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Unagi Don
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1" size="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -404,9 +419,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Choose Any 2 Rolls
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1" size="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -419,9 +433,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Choose Any 3 Rolls
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1" size="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -458,9 +471,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Miso Soup
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1" size="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -473,9 +485,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Clear Soup
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1" size="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -488,9 +499,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Seafood Soup
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1" size="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -503,9 +513,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Mixed Green Salad
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1" size="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -518,9 +527,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Avocado Salad
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1" size="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -533,9 +541,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Seaweed Salad
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1" size="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1" size="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -549,9 +556,8 @@
 							<span class="close" onclick="closeModal()"> &times; </span>
 							<p class="ordering">
 								Salmon Skin Salad
-								<span id="sp-instructions"> Special Instructions </span>
-								<textarea> </textarea>
-								<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+								<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 							</p>
 						</div>
 					</div>
@@ -565,9 +571,8 @@
 							<span class="close" onclick="closeModal()"> &times; </span>
 							<p class="ordering">
 								Kani Salad
-								<span id="sp-instructions"> Special Instructions </span>
-								<textarea> </textarea>
-								<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+								<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 							</p>
 						</div>
 					</div>
@@ -581,9 +586,8 @@
 							<span class="close" onclick="closeModal()"> &times; </span>
 							<p class="ordering">
 								Snow Crab Salad
-								<span id="sp-instructions"> Special Instructions </span>
-								<textarea> </textarea>
-								<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+								<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 							</p>
 						</div>
 					</div>
@@ -597,9 +601,8 @@
 							<span class="close" onclick="closeModal()"> &times; </span>
 							<p class="ordering">
 								Pepper Tuna Salad
-								<span id="sp-instructions"> Special Instructions </span>
-								<textarea> </textarea>
-								<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+								<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 							</p>
 						</div>
 					</div>
@@ -613,9 +616,8 @@
 							<span class="close" onclick="closeModal()"> &times; </span>
 							<p class="ordering">
 								Special Sashimi Salad
-								<span id="sp-instructions"> Special Instructions </span>
-								<textarea> </textarea>
-								<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+								<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 							</p>
 						</div>
 					</div>
@@ -641,9 +643,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Edamame
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -657,9 +658,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Haru Maki
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -672,9 +672,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Age Tofu
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -688,9 +687,8 @@
 							<span class="close" onclick="closeModal()"> &times; </span>
 							<p class="ordering">
 								Yasai Gyoza
-								<span id="sp-instructions"> Special Instructions </span>
-								<textarea> </textarea>
-								<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+								<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 							</p>
 						</div>
 					</div>
@@ -703,9 +701,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Shrimp Shumai
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -718,9 +715,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Gyoza
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -734,9 +730,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Wasabi Shumai
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -750,9 +745,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Ika Fried
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -766,9 +760,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Tatsuta Age
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -781,9 +774,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Vegetable Tempura
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -797,9 +789,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Zaru Soba
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -813,9 +804,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Nasu
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -829,9 +819,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Chicken Negimaki
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -844,9 +833,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Beef Negimaki
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -859,9 +847,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Shrimp & Vegetable Tempura
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -875,9 +862,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Butterfly Shrimp
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -891,9 +877,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Salmon Asparagus
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 					</div>
@@ -906,9 +891,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Crispy Duck Spring Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -922,9 +906,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Hamachi-Kama
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -938,9 +921,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Yaki Tori
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -954,9 +936,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Ika Maru Yaki
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -983,9 +964,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Oshinko
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -999,9 +979,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							White Fish Tempura
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1015,9 +994,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Sunomono
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1031,9 +1009,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Shrimp Summer
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1047,9 +1024,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Tiger Eye
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1063,9 +1039,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							King Salmon
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1078,9 +1053,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Sushi Appetizer
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1093,9 +1067,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Sashimi Appetizer
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1112,9 +1085,8 @@
 								<button> Yellow Jalapeno </button>
 								<button> Sashimi Jalapeno </button>
 							</div>
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1132,9 +1104,8 @@
 									<button> Spicy Tuna Tartar </button>
 									<button> Salmon Tartar </button>
 								</div>
-								<span id="sp-instructions"> Special Instructions </span>
-								<textarea> </textarea>
-								<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+								<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 							</p>
 						</div>
 					</div>
@@ -1148,9 +1119,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Tuna Tataki
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1164,9 +1134,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Usuzukuri
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1191,9 +1160,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Tuna
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1206,9 +1174,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Fatty Tuna
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1221,9 +1188,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							White Tuna
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1236,9 +1202,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Salmon
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1251,9 +1216,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Smoked Salmon
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1266,9 +1230,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Yellowtail
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1281,9 +1244,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Fluke
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1296,9 +1258,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							YellowtailJalapeno
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1311,9 +1272,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Mackerel
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1326,9 +1286,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Sea Urchin
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1341,9 +1300,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Alaskan King Crab
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1356,9 +1314,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Red Clam
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1371,9 +1328,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Squid
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1386,9 +1342,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Scallop
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1401,9 +1356,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Shrimp
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1416,9 +1370,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Eel
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1431,9 +1384,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Crab Stick
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1446,9 +1398,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Octopus
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1461,9 +1412,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Salmon Roe
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1491,9 +1441,8 @@
 								<button> Black </button>
 								<button> Green </button>
 							</div>
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1506,9 +1455,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Egg
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1521,9 +1469,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Bean Curd
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1549,9 +1496,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Salmon Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1564,9 +1510,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Tuna Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1583,9 +1528,8 @@
 								<button> Tuna Avocado Roll </button>
 								<button> Tuna Cucumber Roll </button>
 							</div>
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1598,9 +1542,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Yellowtail Scallion Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1617,9 +1560,8 @@
 								<button> Salmon Avocado Roll </button>
 								<button> Salmon Cucumber Roll </button>
 							</div>
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1633,9 +1575,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Alaska Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1649,9 +1590,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Saba Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1664,9 +1604,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Toro Scallion Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1681,9 +1620,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Salmon Skin Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1700,9 +1638,8 @@
 								<button> Eel Avocado Roll </button>
 								<button> Eel Cucumber Roll </button>
 							</div>
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1716,9 +1653,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Boston Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1732,9 +1668,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Philadelphia Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1757,9 +1692,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Shrimp & Asparagus Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1773,9 +1707,8 @@
 							<span class="close" onclick="closeModal()"> &times; </span>
 							<p class="ordering">
 								Futo Maki
-								<span id="sp-instructions"> Special Instructions </span>
-								<textarea> </textarea>
-								<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+								<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 							</p>
 						</div>
 					</div>
@@ -1789,9 +1722,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Oyster Tempura Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1805,9 +1737,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Shrimp Tempura Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1821,9 +1752,8 @@
 							<span class="close" onclick="closeModal()"> &times; </span>
 							<p class="ordering">
 								Snow Crab Roll
-								<span id="sp-instructions"> Special Instructions </span>
-								<textarea> </textarea>
-								<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+								<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 							</p>
 						</div>
 					</div>
@@ -1837,9 +1767,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Spider Maki
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1853,9 +1782,8 @@
 							<span class="close" onclick="closeModal()"> &times; </span>
 							<p class="ordering">
 								Wasabi Lobster Roll
-								<span id="sp-instructions"> Special Instructions </span>
-								<textarea> </textarea>
-								<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+								<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 							</p>
 						</div>
 					</div>
@@ -1869,9 +1797,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							King Crab Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1885,9 +1812,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Lobster Tempura Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1901,9 +1827,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Dragon Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1925,9 +1850,8 @@
 								<button> Spicy Yellowtail Roll </button>
 								<button> Spicy White Tuna Roll </button>
 							</div>
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1940,9 +1864,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Yellowtail Jalapeno Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1962,9 +1885,8 @@
 								<button> Spicy Yellowtail Roll </button>
 								<button> Spicy White Tuna Roll </button>
 							</div>
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -1977,9 +1899,8 @@
 							<span class="close" onclick="closeModal()"> &times; </span>
 							<p class="ordering">
 								Spicy Scallop Roll
-								<span id="sp-instructions"> Special Instructions </span>
-								<textarea> </textarea>
-								<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+								<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 							</p>
 						</div>
 					</div>
@@ -1992,9 +1913,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Spicy Mango Shrimp Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2008,9 +1928,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Black Pepper Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2024,9 +1943,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Volcano Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2052,9 +1970,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Kampyo Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2067,9 +1984,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Yamagonbo Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2082,9 +1998,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Peanut Avocado Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2097,9 +2012,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Asparagus Shiitake Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2112,9 +2026,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Sweet Potato Tempura Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2127,9 +2040,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Oshinko Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2142,9 +2054,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Shiitake Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2157,9 +2068,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Cucumber Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2172,9 +2082,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Avocado Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2187,9 +2096,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Asparagus Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2202,9 +2110,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Yasai Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2218,9 +2125,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							House Vegetable Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2234,9 +2140,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Vegetable Dragon Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2264,9 +2169,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Roll Combo 1
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2280,9 +2184,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Roll Combo 2
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2296,9 +2199,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Roll Combo 3
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2312,9 +2214,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Roll Combo 4
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2340,9 +2241,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Snow Crab Naruto
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2355,9 +2255,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Eel Lover Naruto
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2370,9 +2269,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Rainbow Naruto
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2385,9 +2283,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Spicy Tuna Naruto
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2400,9 +2297,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Wasabi Lobster Naruto
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2430,9 +2326,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Kawasaki Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2446,9 +2341,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Mermaid Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2462,9 +2356,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Spicy Girl Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2478,9 +2371,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Crazy Salmon Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2494,9 +2386,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Crazy Tuna Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2510,9 +2401,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Tiger Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2526,9 +2416,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Queen Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2542,9 +2431,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Valentines Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2558,9 +2446,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Seaside Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2574,9 +2461,8 @@
 					<span class="close" onclick="closeModal()"> &times; </span>
 					<p class="ordering">
 						Out of Control Roll
-						<span id="sp-instructions"> Special Instructions </span>
-						<textarea> </textarea>
-						<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+						<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 					</p>
 				</div>
 			</div>
@@ -2590,9 +2476,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Fire Phoenix Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2606,9 +2491,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Incredible Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2624,9 +2508,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Dancing Dragon Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2640,9 +2523,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Rock N Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2656,9 +2538,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Litchfield Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2672,9 +2553,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Sexy Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2688,9 +2568,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Angel Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2704,9 +2583,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Connecticut Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2720,9 +2598,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Crazy Fried Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2738,9 +2615,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Rainbow Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2754,9 +2630,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Empire Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2770,9 +2645,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Golden Dragon Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2786,9 +2660,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Ocean Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2802,9 +2675,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Dinosaur Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2818,9 +2690,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Ninja Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2834,9 +2705,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Red Hot Roll
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2864,9 +2734,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Sushi Box
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2879,9 +2748,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Sashimi Box
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2894,9 +2762,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Beef Teriyaki Box
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2909,9 +2776,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Salmon Teriyaki Box
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2924,9 +2790,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Chicken Teriyaki Box
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2939,9 +2804,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Shrimp Teriyaki Box
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2968,9 +2832,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Hibachi Vegetable
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2983,9 +2846,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Hibachi Chicken
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -2998,9 +2860,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Hibachi Salmon
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3013,9 +2874,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Hibachi Steak
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3028,9 +2888,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Hibachi Filet Mignon
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3043,9 +2902,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Hibachi Shrimp
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3058,9 +2916,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Hibachi Scallop
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3073,9 +2930,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Hibachi Chilean Seabass
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3088,9 +2944,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Hibachi Lobster Tail
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3116,9 +2971,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Salmon & Chicken Combo
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3131,9 +2985,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Chicken & Shrimp Combo
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3146,9 +2999,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Steak & Chicken Combo
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3161,9 +3013,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Steak & Salmon
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3176,9 +3027,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Filet Mignon & Chicken
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3191,9 +3041,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Steak & Shrimp Combo
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3205,9 +3054,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Filet Mignon & Shrimp Combo
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3219,9 +3067,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Scallop & Shrimp Combo
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3233,9 +3080,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Steak & Scallop Combo
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3248,9 +3094,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Filet Mignon & Scallop Combo
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3263,9 +3108,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Steak & Lobster Tail Combo
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3278,9 +3122,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Filet Mignon & Lobster Tail Combo
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3294,9 +3137,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Seafood Combo
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3323,9 +3165,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Hibachi Chicken Junior
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3338,9 +3179,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Hibachi Shrimp Junior
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3353,9 +3193,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Hibachi Scallop Junior
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3368,9 +3207,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Hibachi Steak Junior
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3383,9 +3221,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Hibachi Salmon Junior
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3410,9 +3247,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Side Hibachi Chicken
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3425,9 +3261,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Side Hibachi Vegetable
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3440,9 +3275,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Side Hibachi Salmon
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3455,9 +3289,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Side Hibachi Steak
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3470,9 +3303,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Side Hibachi Shrimp
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3485,9 +3317,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Side Hibachi Scallop
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3500,9 +3331,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Side Fried Rice
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3515,9 +3345,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Side Hibachi Noodle
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3544,9 +3373,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Chicken Teriyaki
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3559,9 +3387,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Beef Teriyaki
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3574,9 +3401,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Salmon Teriyaki
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3589,9 +3415,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Shrimp Teriyaki
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3604,9 +3429,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Beef Negimaki
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3618,9 +3442,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Chicken Negimaki
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3634,9 +3457,8 @@
 							<span class="close" onclick="closeModal()"> &times; </span>
 							<p class="ordering">
 								Chicken Katsu
-								<span id="sp-instructions"> Special Instructions </span>
-								<textarea> </textarea>
-								<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+								<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 							</p>
 						</div>
 					</div>
@@ -3650,9 +3472,8 @@
 							<span class="close" onclick="closeModal()"> &times; </span>
 							<p class="ordering">
 								Tonkatsu
-								<span id="sp-instructions"> Special Instructions </span>
-								<textarea> </textarea>
-								<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+								<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 							</p>
 						</div>
 					</div>
@@ -3670,9 +3491,8 @@
 									<button> Pork Katsu Don </button>
 									<button> Chicken Katsu Don </button>
 								</div>
-								<span id="sp-instructions"> Special Instructions </span>
-								<textarea> </textarea>
-								<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+								<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 							</p>
 						</div>
 					</div>
@@ -3685,9 +3505,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Shrimp & Vegetable Tempura
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3700,9 +3519,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Vegetable Tempura
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3715,9 +3533,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Tofu Teriyaki
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3730,9 +3547,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Seafood Teriyaki
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3750,9 +3566,8 @@
 									<button> Steamed Chilean Seabass </button>
 									<button> Grilled Chilean Seabass </button>
 								</div>
-								<span id="sp-instructions"> Special Instructions </span>
-								<textarea> </textarea>
-								<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+								<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 							</p>
 						</div>
 					</div>
@@ -3784,9 +3599,8 @@
 									<button> Chicken Yaki Udon </button>
 									<button> Beef Yaki Udon	</button>
 								</div>
-								<span id="sp-instructions"> Special Instructions </span>
-								<textarea> </textarea>
-								<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+								<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 							</p>
 						</div>
 					</div>
@@ -3800,9 +3614,8 @@
 							<span class="close" onclick="closeModal()"> &times; </span>
 							<p class="ordering">
 								Chicken Udon
-								<span id="sp-instructions"> Special Instructions </span>
-								<textarea> </textarea>
-								<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+								<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 							</p>
 						</div>
 					</div>
@@ -3816,9 +3629,8 @@
 							<span class="close" onclick="closeModal()"> &times; </span>
 							<p class="ordering">
 								Tempura Udon
-								<span id="sp-instructions"> Special Instructions </span>
-								<textarea> </textarea>
-								<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+								<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 							</p>
 						</div>
 					</div>
@@ -3832,9 +3644,8 @@
 							<span class="close" onclick="closeModal()"> &times; </span>
 							<p class="ordering">
 								Nabeyaki Udon
-								<span id="sp-instructions"> Special Instructions </span>
-								<textarea> </textarea>
-								<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+								<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 							</p>
 						</div>
 					</div>
@@ -3847,9 +3658,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Vegetable Udon
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3862,9 +3672,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Vegetable Yaki Udon
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3892,9 +3701,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Kawasaki Sushi
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3908,9 +3716,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Sushi Dinner
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3924,9 +3731,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Sushi Lover
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3940,9 +3746,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Sashimi Dinner
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3956,9 +3761,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Sashimi For 2
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3972,9 +3776,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Sushi Sashimi Combo
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -3988,9 +3791,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Chirashi
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -4004,9 +3806,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Unagi Don
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -4020,9 +3821,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Triple Don
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -4036,9 +3836,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Sushi For 2
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -4052,9 +3851,8 @@
 						<span class="close" onclick="closeModal()"> &times; </span>
 						<p class="ordering">
 							Sushi Sashimi For 2
-							<span id="sp-instructions"> Special Instructions </span>
-							<textarea> </textarea>
-							<form> <input type="text" value="1"> <button> Submit </button> </form>
+
+							<form> <input type="text" value="1"> <button> Add to Cart </button> </form>
 						</p>
 					</div>
 				</div>
@@ -4066,19 +3864,17 @@
 
 		</div>
 
-<!-- _____________________ SHOPPING CART HERE ___________________ -->
 
+<!--
 		<div id="shopping-cart">
 			<p> Your Order </p>
-
-			<!-- FOOD ITEMS GO HERE WHEN ORDERED -->
 
 			<hr> </hr>
 			<p> Total: <span id="total"> $0.00 </span> </p>
 			<button> Checkout </button>
 		</div>
+-->
 
-		<script src="menu.js">	</script>
 
 	</body>
 
