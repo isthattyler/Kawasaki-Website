@@ -4,10 +4,10 @@
 }
 
 @keyframes bgfade {
-	0%   { background-image: url("images/japan.jpg");  background-size: 100vw 80vh;}
-	33%  { background-image: url("images/sushi.jpg");	 background-size: 100vw 80vh;}
-	50%  { background-image: url("images/sushi2.jpg"); background-size: 100vw 80vh;}
-	100% { background-image: url("images/japan.jpg");  background-size: 100vw 80vh;}
+	0%   { background-image: url("./images/japan.jpg");  background-size: 100vw 80vh;}
+	33%  { background-image: url("./images/sushi.jpg");	 background-size: 100vw 80vh;}
+	50%  { background-image: url("./images/sushi2.jpg"); background-size: 100vw 80vh;}
+	100% { background-image: url("./images/japan.jpg");  background-size: 100vw 80vh;}
 }
 
 
@@ -16,7 +16,7 @@
 body {
 	background-color: #0A0A0C;
 	font-family: Garamond;
-	background-image: url("images/sushi.jpg");
+	background-image: url("./images/sushi.jpg");
 	background-repeat: no-repeat;
 	animation: bgfade 10s ease infinite;
 }
@@ -181,10 +181,10 @@ media query typical widths for min-width = 320, 481, 641, 961, 1025, 1281*/
 	}
 
 	@keyframes bgfade {
-		0%   { background-image: url("images/japan.jpg");  background-size: 100vw 100vh;}
-		33%  { background-image: url("images/sushi.jpg");	 background-size: 100vw 100vh;}
-		50%  { background-image: url("images/sushi2.jpg"); background-size: 100vw 100vh;}
-		100% { background-image: url("images/japan.jpg");  background-size: 100vw 100vh;}
+		0%   { background-image: url("./images/japan.jpg");  background-size: 100vw 100vh;}
+		33%  { background-image: url("./images/sushi.jpg");	 background-size: 100vw 100vh;}
+		50%  { background-image: url("./images/sushi2.jpg"); background-size: 100vw 100vh;}
+		100% { background-image: url("./images/japan.jpg");  background-size: 100vw 100vh;}
 	}
 
 	#sideNavSpan, #mySideNav {

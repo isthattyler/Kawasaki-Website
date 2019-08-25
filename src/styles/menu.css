@@ -5,7 +5,7 @@
 }
 
 body {
-	background-color: #1F7EFA;
+	background-color: #A7D2CB;
   background-repeat: no-repeat;
 	font-family: Garamond;
 	margin-bottom: 10%;
@@ -218,6 +218,9 @@ form input {
 	position: fixed;
 	top: 17%;
 	right: 1%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	transition: all 0.25s ease-in-out;
 }
 
 #shopping-cart button {
